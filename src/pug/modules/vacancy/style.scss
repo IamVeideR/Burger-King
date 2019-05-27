@@ -1,0 +1,133 @@
+.vacancy {
+    padding-top: 65px; 
+
+    &__titles {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        padding: 4px;
+        font-size: 16px;
+        font-family: Raleway;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        padding-bottom: 3px;
+    }
+    
+    &__input {
+        position: absolute;
+        transform: scale(0.001);
+
+        &:checked + label {
+           
+            border-bottom: 4px solid $red;
+        }
+        
+        &:checked + label > .vacancy__title {
+            padding-bottom: 0px;
+            
+        }
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        position: relative;
+        padding-bottom: 12px;
+        box-sizing: border-box;
+        border-bottom: 1px solid white;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 1px;
+            top: 0px;
+            width: 1px;
+            height: 20px;
+            border-right: 1px solid white;
+        }
+
+        &--last {
+            &::after {
+                height: 0px;
+            }  
+        }        
+    }
+
+    &__section {
+        display: none;
+        justify-content: center;
+        padding-top: 55px;
+        height: 210px;
+
+        &--first {
+            display: flex; 
+        }
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+        max-width: 590px;
+    }
+    &__text {
+        display: none;
+    }
+}
+@media (max-width: $tablet) {
+.vacancy {
+    padding-top: 25px; 
+
+    &__titles-block{
+        display: none;
+    }
+    &__text {
+        display: block;
+        width: 100%;
+        padding: 4px;
+        font-size: 16px;
+        font-family: Raleway;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        padding-bottom: 3px;
+        z-index: 10;
+        position: relative;
+        i { 
+            height: 14px;
+            font-size: 20px;
+            position: absolute;
+            right: 15px;
+            top: 2px;
+        }
+        &--opened {
+            i {
+                transform-origin: 50% 75%;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        height: initial;
+        border-bottom: 1px solid white;
+    }
+
+    &__paragraph {
+        display: none;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+}

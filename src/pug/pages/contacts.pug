@@ -1,0 +1,173 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Контакты' 
+    - activePage = 'contacts'
+block content
+    .map
+        .map__marker(style='top: 20%; left: 28%;')
+        .map__marker(style='top: 50%; left: 35%;')
+        .map__marker(style='top: 25%; left: 50%;')
+        .map__marker(style='top: 60%; left: 50%;')
+        .map__marker(style='top: 10%; left: 60%;')
+        .map__marker(style='top: 40%; left: 65%;')
+        .map__marker(style='top: 25%; left: 28%;')
+        .map__marker(style='top: 55%; left: 35%;')
+        .map__marker(style='top: 30%; left: 50%;')
+        .map__marker(style='top: 65%; left: 50%;')
+        .map__marker(style='top: 15%; left: 60%;')
+        .map__marker(style='top: 45%; left: 65%;')
+    .contacts-filter
+        .contacts-filter__container.container
+            -
+                var filter = {
+                    title: 'Город',
+                    droptitle: 'Выберите Город',
+                    style: 'city',
+                    dropdown: ['Алматы', 'Шымкент', 'Атырау'],
+                    eachstyle: ['almaty', 'shymkent', 'atyrau'],
+                }
+            include ../modules/filter/module
+            -
+                var filter = {
+                    title: 'Предпочитаемый Ресторан',
+                    droptitle: 'Выберите Ресторан',
+                    style: 'restaurant',
+                    dropdown: ['Все', 'Не все', 'Определенный Ресторан'],
+                    eachstyle: ['all', 'not-all', 'some'],
+                }
+            include ../modules/filter/module
+            .map-show
+                p.filter__show Показать на карте
+                    i.fas.fa-map-marker-alt
+    .map.map--small
+        .map__marker.map__marker--small(style='top: 20%; left: 28%;')
+        .map__marker.map__marker--small(style='top: 50%; left: 35%;')
+        .map__marker.map__marker--small(style='top: 25%; left: 50%;')
+        .map__marker.map__marker--small(style='top: 60%; left: 50%;')
+        .map__marker.map__marker--small(style='top: 10%; left: 60%;')
+        .map__marker.map__marker--small(style='top: 40%; left: 65%;')
+        .map__marker.map__marker--small(style='top: 25%; left: 28%;')
+        .map__marker.map__marker--small(style='top: 55%; left: 35%;')
+        .map__marker.map__marker--small(style='top: 30%; left: 50%;')
+        .map__marker.map__marker--small(style='top: 65%; left: 50%;')
+        .map__marker.map__marker--small(style='top: 15%; left: 60%;')
+        .map__marker.map__marker--small(style='top: 45%; left: 65%;')
+    .contacts-places.container
+        h3.contacts-places__title Алматы #[span 12 Филиалов]
+        .contacts-places__container.container
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+            - 
+                var contact = {
+                    name: '«MEGA ALMA-ATA»',
+                    place: '2-ой этаж, фудкорт',
+                    time: 'Пн-Вс 10:00-0:00',
+                    phone: '+7 (771) 552-99-07',
+                    more: '(Детские дни рождения)'
+                }
+            include ../modules/contact/module
+        p.show-all Показать все
+    .contacts-send
+        - 
+            var send = {
+                background: '#f7a800',
+            }
+        include ../modules/send/module

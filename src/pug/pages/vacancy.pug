@@ -1,0 +1,91 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Вакансии' 
+    - activePage = 'vacancy'
+block content
+    .map
+        .map__marker(style='top: 20%; left: 28%;')
+        .map__marker(style='top: 50%; left: 35%;')
+        .map__marker(style='top: 25%; left: 50%;')
+        .map__marker(style='top: 60%; left: 50%;')
+        .map__marker(style='top: 10%; left: 60%;')
+        .map__marker(style='top: 40%; left: 65%;')
+    .vacancy-filter
+        .vacancy-filter__container.container
+            -
+                var filter = {
+                    title: 'Город',
+                    droptitle: 'Выберите Город',
+                    style: 'city',
+                    dropdown: ['Алматы', 'Шымкент', 'Атырау'],
+                    eachstyle: ['almaty', 'shymkent', 'atyrau'],
+                }
+            include ../modules/filter/module
+            -
+                var filter = {
+                    title: 'Вакансия',
+                    style: 'vacancy',
+                    droptitle: 'Выберите Вакансию',
+                    dropdown: ['Координатор', 'Директор', 'Повелитель'],
+                    eachstyle: ['coordinator', 'director', 'lord'],
+                }
+            include ../modules/filter/module
+            -
+                var filter = {
+                    title: 'Предпочитаемый Адрес',
+                    style: 'address',
+                    droptitle: 'Выберите Адрес',
+                    dropdown: ['Адрес', 'Медеуский Район', 'Алмалинский Район'],
+                    eachstyle: ['address', 'medeu', 'almaly'],
+                }
+            include ../modules/filter/module
+            -
+                var filter = {
+                    title: 'Отделение',
+                    style: 'department',
+                    droptitle: 'Выберите Отделение',
+                    dropdown: ['Юридический Отдел', 'Абстракционный Отдел', 'Дематириaлизованный Отдел'],
+                    eachstyle: ['legal', 'abstract', 'dematerialize'],
+                }
+            include ../modules/filter/module
+            .map-show
+                p.filter__show Показать на карте
+                    i.fas.fa-map-marker-alt
+    .map.map--small
+        .map__marker.map__marker--small(style='top: 20%; left: 28%;')
+        .map__marker.map__marker--small(style='top: 50%; left: 35%;')
+        .map__marker.map__marker--small(style='top: 25%; left: 50%;')
+        .map__marker.map__marker--small(style='top: 60%; left: 50%;')
+        .map__marker.map__marker--small(style='top: 10%; left: 60%;')
+        .map__marker.map__marker--small(style='top: 40%; left: 65%;')
+    .vacancy-about
+        .vacancy-about__container.container
+            h3.vacancy-about__title ЕСТЬ #[span 6 ВАКАНСИЙ координатора] В ВАШЕМ Регионе
+            p.vacancy-about__text Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную атмосферу в коллективе,  предлагаем нашим людям справедливую оплату труда, безопасные условия работы,  привлекательный социальный пакет, а главное способствуем личностному и профессиональному развитию сотрудников.
+            h3.vacancy-about__price 150 000 т #[span Заработная плата]
+            .vacancy-about__more.container
+                .more__block
+                    h3.more__title ЧЕМ ПРЕДСТОИТ ЗАНИМАТЬСЯ
+                    ul.more__list
+                        li.more__item Обучение сотрудников стандартам компании
+                        li.more__item Контроль и выполнение стандартов работы
+                        li.more__item Обучение сотрудников всем деталям работы на кухне и за кассой
+                        li.more__item Наставничество
+                .more__block
+                    h3.more__title что мы предлагаем
+                    ul.more__list
+                        li.more__item Стабильный оклад + премии
+                        li.more__item Дружная команда
+                        li.more__item Карьерный рост
+                        li.more__item Гибкий график
+                        li.more__item Работа рядом с домом
+                        li.more__item Бесплатное питание
+                        li.more__item Бесплатное обучение по лучшим 
+                        li.more__item международным стандартам
+            a(href='#').vacancy-about__button.base-button.send-resume-button отправить анкету
+    include ../modules/three-steps/module
+    .learn-more
+        .learn-more__container.container
+            h3.learn-more__title Узнай Историю Нашего Успеха!
+            a(href="#").learn-more__button.base-button.learn-more-button Узнать Больше

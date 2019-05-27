@@ -1,0 +1,10 @@
+.filter
+    h3.filter__title(class='filter--'+filter.style)= filter.title
+    .filter__container
+        .filter__block
+            p.filter__first(class='filter--'+filter.eachstyle[0])= filter.dropdown[0]
+            p.filter__droptitle= filter.droptitle
+            i.fas.fa-sort-down
+        ul.filter__list
+                each tab, i in filter.dropdown
+                    li.filter__item(class='filter--'+filter.eachstyle[i])= tab

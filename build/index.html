@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burger King</title>
+    <link href="static/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__container container"><a class="header__logo" href="index.html"></a><a class="header__button base-button send-resume-button" href="#">отправить анкету</a>
+        <div class="header__dropdown"> </div>
+        <ul class="header__menu">
+          <li class="menu__item"><a class="menu__link" href="vacancy.html">Вакансии</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Герои C.A.R.E</a></li>
+          <li class="menu__item"><a class="menu__link" href="referral.html">Friend Referral</a></li>
+          <li class="menu__item"><a class="menu__link" href="benefits.html">Benefits</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Office</a></li>
+          <li class="menu__item"><a class="menu__link" href="university.html">Университет BKU</a> </li>
+          <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+          <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="header__language">
+          <div class="language__block">
+            <p class="language__title">RU</p><i class="fas fa-sort-down"></i>
+          </div>
+          <ul class="language__list">
+            <li class="language__item">RU</li>
+            <li class="language__item">KAZ</li>
+            <li class="language__item">ENG</li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__mobile container">
+        <div class="header__mobile--top">
+          <div class="header__language">
+            <div class="language__block">
+              <p class="language__title">RU</p><i class="fas fa-sort-down"></i>
+            </div>
+            <ul class="language__list">
+              <li class="language__item">RU</li>
+              <li class="language__item">KAZ</li>
+              <li class="language__item">ENG</li>
+            </ul>
+          </div><i class="fas fa-times header__close"></i>
+        </div>
+        <ul class="header__menu header__menu--mobile">
+          <li class="menu__item"><a class="menu__link" href="vacancy.html">Вакансии</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Герои C.A.R.E</a></li>
+          <li class="menu__item"><a class="menu__link" href="referral.html">Friend Referral</a></li>
+          <li class="menu__item"><a class="menu__link" href="benefits.html">Benefits</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Office</a></li>
+          <li class="menu__item"><a class="menu__link" href="university.html">Университет BKU</a> </li>
+          <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+          <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="question-more">
+      <div class="question-more__container container"><i class="fas fa-times question-more__close"></i>
+        <h2 class="question-more__title">Задай Вопрос</h2>
+        <form class="question-more__form" action="index.html">
+          <input class="question-more__name" type="text" placeholder="ФИО" name="1resume1">
+          <input class="question-more__phone" type="text" placeholder="Телефон" name="1resume2">
+          <textarea class="question-more__message" type="textarea" placeholder="Сообщение" name="1resume3"></textarea>
+          <button class="question-more__button base-button" type="submit">отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="send-resume">
+      <div class="send-resume__container container"><i class="fas fa-times send-resume__close"></i>
+        <h2 class="send-resume__title">Анкета</h2>
+        <form class="send-resume__form" action="index.html">
+          <select size="1" name="2resume1">
+            <option value="1">Интересующая Должность</option>
+            <option value="2">Кассир</option>
+            <option value="3">Повар</option>
+          </select>
+          <div class="send-resume__select">
+            <p class="send-resume__select-title"></p><i class="fas fa-sort-down"></i>
+            <div class="send-resume__option-block"></div>
+          </div>
+          <input class="send-resume__name" type="text" placeholder="ФИО" name="2resume2">
+          <select size="1">
+            <option value="1">Где Вы Хотите Работать</option>
+            <option value="2">В Ресторане</option>
+            <option value="3">Не в Ресторане</option>
+          </select>
+          <div class="send-resume__select">
+            <p class="send-resume__select-title"></p><i class="fas fa-sort-down"></i>
+            <div class="send-resume__option-block"></div>
+          </div>
+          <select class="send-resume--half" size="1" name="2resume3">
+            <option value="1">Гражданство</option>
+            <option value="2">Казахстана</option>
+            <option value="3">Не Казахстана</option>
+          </select>
+          <div class="send-resume__select send-resume--half">
+            <p class="send-resume__select-title"></p><i class="fas fa-sort-down"></i>
+            <div class="send-resume__option-block"></div>
+          </div>
+          <select class="send-resume--half" size="1" name="2resume4">
+            <option value="1">Город</option>
+            <option value="2">Алматы</option>
+            <option value="3">Не Алматы</option>
+          </select>
+          <div class="send-resume__select send-resume--half">
+            <p class="send-resume__select-title"></p><i class="fas fa-sort-down"></i>
+            <div class="send-resume__option-block"></div>
+          </div>
+          <input class="send-resume--half" type="text" placeholder="Дата Рождения" name="2resume5">
+          <input class="send-resume--half" type="text" placeholder="Телефон" name="2resume6">
+          <div class="send-resume__block">
+            <p class="block__title">1. Вы ранее работали в Burger King?</p>
+            <input type="radio" name="resume1" id="r11" value="1">
+            <label for="r11">Да</label>
+            <input type="radio" name="resume1" id="r12" value="2">
+            <label for="r12">Нет</label>
+            <div class="send-resume__condition">
+              <p class="block__text block__text--select">Если <span style="font-weight: bold;">да</span>, пожалуйста, укажите ресторан</p>
+              <select size="1">
+                <option value="1">Ресторан</option>
+                <option value="2">Не ресторан</option>
+              </select>
+              <div class="send-resume__select send-resume--half">
+                <p class="send-resume__select-title"></p><i class="fas fa-sort-down"></i>
+                <div class="send-resume__option-block"></div>
+              </div>
+            </div>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">2. Вы достигли возраста 18 лет и более?</p>
+            <input type="radio" name="resume2" id="r21" value="1">
+            <label for="r21">Да</label>
+            <input type="radio" name="resume2" id="r22" value="2">
+            <label for="r22">Нет</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">3. Из какого источника вы услышали информацию о работе?</p>
+            <input type="radio" name="resume3" id="r31" value="1">
+            <label for="r31">От друга</label>
+            <input type="radio" name="resume3" id="r32" value="2">
+            <label for="r32">Официальный вебсайт компании Burger King</label>
+            <input type="radio" name="resume3" id="r33" value="3">
+            <label for="r33">Страницы в социальных сетях бренда Burger King</label>
+            <input type="radio" name="resume3" id="r34" value="4">
+            <label for="r34">По работе через другого работодателя</label>
+            <input type="radio" name="resume3" id="r35" value="5">
+            <label for="r35">В ресторане</label>
+            <input type="radio" name="resume3" id="r36" value="6">
+            <label for="r36">Центр занятости</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">4. На текущий момент вы получаете какую-либо квалификацию, учитесь в школе, колледже или университете (включая очное и заочное отделение)?</p>
+            <input type="radio" name="resume4" id="r41" value="1">
+            <label for="r41">Да</label>
+            <input type="radio" name="resume4" id="42" value="2">
+            <label for="r42">Нет</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">5. В какие дни среди рабочей недели вы свободны (доступны) для работы?</p>
+            <input type="checkbox" name="resume5" id="r51" value="1">
+            <label for="r51">Понедельник</label>
+            <input type="checkbox" name="resume5" id="r52" value="2">
+            <label for="r52">Вторник</label>
+            <input type="checkbox" name="resume5" id="r53" value="3">
+            <label for="r53">Среда</label>
+            <input type="checkbox" name="resume5" id="r54" value="4">
+            <label for="r54">Четверг</label>
+            <input type="checkbox" name="resume5" id="r55" value="5">
+            <label for="r55">Пятница</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">6. В какой временной промежуток в течения дня (во время рабочей недели) вы доступны.</p>
+            <p class="block__text">Просьба, выбрать все возможные варианты.</p>
+            <input type="checkbox" name="resume6" id="r61" value="1">
+            <label for="r61">08:00-12:00</label>
+            <input type="checkbox" name="resume6" id="r62" value="2">
+            <label for="r62">12:00-17:00</label>
+            <input type="checkbox" name="resume6" id="r63" value="3">
+            <label for="r63">17:00-23:00</label>
+            <input type="checkbox" name="resume6" id="r64" value="4">
+            <label for="r64">Поздно ночью</label>
+            <input type="checkbox" name="resume6" id="r65" value="5">
+            <label for="r65">Не доступен</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">7. В какой выходной день вы доступны для работы?</p>
+            <input type="checkbox" name="resume7" id="r71" value="1">
+            <label for="r71">Суббота</label>
+            <input type="checkbox" name="resume7" id="r72" value="2">
+            <label for="r72">Воскресенье</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">8. В какой временной промежуток в течения дня (во время рабочей недели) вы доступны.</p>
+            <p class="block__text">Просьба, выбрать все возможные варианты.</p>
+            <input type="checkbox" name="resume8" id="r81" value="1">
+            <label for="r81">08:00-12:00</label>
+            <input type="checkbox" name="resume8" id="r82" value="2">
+            <label for="r82">12:00-17:00</label>
+            <input type="checkbox" name="resume8" id="r83" value="3">
+            <label for="r83">17:00-23:00</label>
+            <input type="checkbox" name="resume8" id="r84" value="4">
+            <label for="r84">Поздно ночью</label>
+            <input type="checkbox" name="resume8" id="r85" value="5">
+            <label for="r85">Не доступен</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">9. Вы рассматриваете полную занятость или частичную занятость?</p>
+            <input type="radio" name="resume9" id="r91" value="1">
+            <label for="r91">Полная занятость</label>
+            <input type="radio" name="resume9" id="r92" value="2">
+            <label for="r92">Частичная занятость</label>
+            <input type="radio" name="resume9" id="r93" value="3">
+            <label for="r93">Не имеет значения</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">10. Ситуационный вопрос. Представьте следующую ситуацию: Ваша смена закончилась, но гость ресторана попросил вас о помощи в разрешении какого-либо вопроса, когда вы уже планировали уходить из ресторана, каковы ваши действия?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume10" id="r101" value="1">
+            <label for="r101">Поможете ему (-ей)</label>
+            <input type="radio" name="resume10" id="r102" value="2">
+            <label for="r102">Принесете свои извинения и сообщите о том, что ваша смена уже закончилась</label>
+            <input type="radio" name="resume10" id="r103" value="3">
+            <label for="r103">Укажете на другого менеджера смены</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">11. Когда вы осознаете, что не знаете каким образом завершить поставленную перед вами задачу, каковы ваши действия?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume11" id="r111" value="1">
+            <label for="r111">Попросите прямого руководителя (супервайзера) закончить задачу</label>
+            <input type="radio" name="resume11" id="r112" value="2">
+            <label for="r112">Попросите кого-либо наглядно показать механизм для успешного выполнения задачи в будущем</label>
+            <input type="radio" name="resume11" id="r113" value="3">
+            <label for="r113">Найдете кого-то, кто справляется с задачей и попросите его выполнить ее</label>
+            <input type="radio" name="resume11" id="r114" value="4">
+            <label for="r114">Не станете завершать задачу, так как каждый должен выполнять работу которую ему объяснили заранее</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">12. В Burger King вам обычно дают видение на ваш прогресс и совет на токаким образом вы можете повысить свою эффективность (при необходимости), как вы на это реагируете?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume12" id="r121" value="1">
+            <label for="r121">Отлично, мне нравится получать обратную связь</label>
+            <input type="radio" name="resume12" id="r122" value="2">
+            <label for="r122">Мне все равно, меня это не волнует</label>
+            <input type="radio" name="resume12" id="r123" value="3">
+            <label for="r123">Мне нравится этот подход</label>
+            <input type="radio" name="resume12" id="r124" value="4">
+            <label for="r124">Я предпочитаю получать совет в том случае, когда считаю нужным</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">13. Один из членов команды помог вам сегодня, ваша реакция и действия?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume13" id="r131" value="1">
+            <label for="r131">Уточните как бы они хотели, чтобы их отблагодарили и сделаете это</label>
+            <input type="radio" name="resume13" id="r132" value="2">
+            <label for="r132">Почему вам нужно их благодарить. Они выполняли свою работу</label>
+            <input type="radio" name="resume13" id="r133" value="3">
+            <label for="r133">Сообщите менеджеру о поступке коллеги и его (-ее) успехах</label>
+            <input type="radio" name="resume13" id="r134" value="4">
+            <label for="r134">Ничего, поощрение и признание заслуг кого-либо –работа менеджера</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">14. Кто-то допустил ошибку, ваши действия?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume14" id="r141" value="1">
+            <label for="r141">Оставлю это на менеджера, это не моя работа</label>
+            <input type="radio" name="resume14" id="r142" value="2">
+            <label for="r142">Я сообщу о проступке при всех членах команды</label>
+            <input type="radio" name="resume14" id="r143" value="3">
+            <label for="r143">Я отведу человека в сторону и дам поддержку</label>
+            <input type="radio" name="resume14" id="r144" value="4">
+            <label for="r144">Я сообщу менеджеру об ошибке</label>
+            <input type="radio" name="resume14" id="r145" value="5">
+            <label for="r145">Если ошибка затронет пищевую безопасность или что то важное, то вместе с коллегой сообщу менеджеру, так как в результате ошибки могут пострадать гости и в целом бренд.</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">15. Вас попросили перейти на замену с кассы на кухню готовить бургеры,ваша реакция, действия?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume15" id="r151" value="1">
+            <label for="r151">Воодушевлен-Мне нравится справляться с новыми задачами и мне бы хотелось помогать команде</label>
+            <input type="radio" name="resume15" id="r152" value="2">
+            <label for="r152">Раздражен-Я предпочитаю заниматься тем, что знаю, оставаться на привычном месте</label>
+            <input type="radio" name="resume15" id="r153" value="3">
+            <label for="r153">Доволен-в прошлый раз я наделал ошибок, но возьмусь за дело</label>
+            <input type="radio" name="resume15" id="r154" value="4">
+            <label for="r154">Недоволен-Мне не хочется идти на замену</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">16. Нам необходимо продать 500 наггетсов на текущей неделе, каким образом вы сможете поспособствовать реализации этой задачи?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume16" id="r161" value="1">
+            <label for="r161">Я помогу выполнить цель в 500 наггетсов и буду рад выполнить эту задачу</label>
+            <input type="radio" name="resume16" id="r162" value="2">
+            <label for="r162">500? Мы можем повысить эффективность и продать намного больше, я поставлю цель в 1 000</label>
+            <input type="radio" name="resume16" id="r163" value="3">
+            <label for="r163">Ничего, я не работаю за кассой, таким образом никак не могу повлиять на результат</label>
+            <input type="radio" name="resume16" id="r164" value="4">
+            <label for="r164">Цели меня не мотивируют, я просто выполняю работу</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">17. Гость вернул картофель фри и пожаловался на качество, что вы сделаете? Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume17" id="r171" value="1">
+            <label for="r171">Примите обратно и незамедлительно их замените</label>
+            <input type="radio" name="resume17" id="r172" value="2">
+            <label for="r172">Гости часто жалуются, попробую фри, прежде чем принимать какое-либо решение</label>
+            <input type="radio" name="resume17" id="r173" value="3">
+            <label for="r173">Попрошу менеджера, поставлю его в известность, так как это его работа разбираться с жалобами гостей</label>
+            <input type="radio" name="resume17" id="r174" value="4">
+            <label for="r174">Улыбнусь, принесу свои извинения, заменю их и уточню чем еще я могу помочь</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">18. Почему мы надеваем фартук в кухонной зоне?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume18" id="r181" value="1">
+            <label for="r181">В целях защиты униформы</label>
+            <input type="radio" name="resume18" id="r182" value="2">
+            <label for="r182">В целях личной безопасности</label>
+            <input type="radio" name="resume18" id="r183" value="3">
+            <label for="r183">Пищевая безопасность</label>
+            <input type="radio" name="resume18" id="r184" value="4">
+            <label for="r184">Часть униформы</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">19. Ситуационный вопрос. Вы опаздываете на смену, ваши действия?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume19" id="r191" value="1">
+            <label for="r191">Ничего, нет моей вины в том, что задерживается автобус</label>
+            <input type="radio" name="resume19" id="r192" value="2">
+            <label for="r192">Позвоню менеджеру и предупрежу о том, во сколько я буду на смене</label>
+            <input type="radio" name="resume19" id="r193" value="3">
+            <label for="r193">Не пойду на работу, все равно уже слишком поздно</label>
+            <input type="radio" name="resume19" id="r194" value="4">
+            <label for="r194">Напишу другу, который тоже на смене и предупрежу команду</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">20. Вы замечаете, что лист салата потемнел (изменил цвет с зеленого на коричневый), когда уже почти положили его на котлету, ваши действия?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume20" id="r201" value="1">
+            <label for="r201">В любом случае, положу на бургер и закончу заказ</label>
+            <input type="radio" name="resume20" id="r202" value="2">
+            <label for="r202">Выброшу его и всю остальную связку листьев салата</label>
+            <input type="radio" name="resume20" id="r203" value="3">
+            <label for="r203">Сообщу менеджеру</label>
+            <input type="radio" name="resume20" id="r204" value="4">
+            <label for="r204">Предложу менеджеру использовать эти листья салата для бургеров, предназначенных для персонала</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">21. Вам предложили возможность обучиться новым навыкам в Burger King,ваши действия?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume21" id="r211" value="1">
+            <label for="r211">Откажусь- Я обладаю хорошими навыками, необходимыми для моей работы и у меня нет времени</label>
+            <input type="radio" name="resume21" id="r212" value="2">
+            <label for="r212">Звучит волнительно, Я всегда интересуюсь тем, чтобы улучшить свои навыки</label>
+            <input type="radio" name="resume21" id="r213" value="3">
+            <label for="r213">Соглашусь, мне кажется, что мой менеджер ожидает это от меня</label>
+            <input type="radio" name="resume21" id="r214" value="4">
+            <label for="r214">Запрошу больше информации у менеджера</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">22. Как бы знакомые описали ваше умение адаптироваться к переменам?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume22" id="r221" value="1">
+            <label for="r221">Не очень гибкий</label>
+            <input type="radio" name="resume22" id="r222" value="2">
+            <label for="r222">Менее гибок, чем среднестатистический человек</label>
+            <input type="radio" name="resume22" id="r223" value="3">
+            <label for="r223">Средний уровень гибкости и адаптивности к переменам</label>
+            <input type="radio" name="resume22" id="r224" value="4">
+            <label for="r224">Более гибок, чем среднестатистический человек</label>
+            <input type="radio" name="resume25" id="r225" value="5">
+            <label for="r225">Очень гибкий</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">23. Что из нижеследующего более всего описывает вашу посещаемость в школе?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume23" id="r231" value="1">
+            <label for="r231">Очень часто отсутствовал</label>
+            <input type="radio" name="resume23" id="r232" value="2">
+            <label for="r232">Я чаще других отсутствовал на уроках</label>
+            <input type="radio" name="resume23" id="r233" value="3">
+            <label for="r233">Я отсутствовал, но не чаще остальных сверстников</label>
+            <input type="radio" name="resume23" id="r234" value="4">
+            <label for="r234">Я почти никогда не пропускал занятия в школе</label>
+            <input type="radio" name="resume25" id="r235" value="5">
+            <label for="r235">Я не ходил в школу</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">24. Ваш менеджер сообщил вам о том, что вам необходимо будет выйти на работу в эти выходные. У вас есть планы на выходные, которые вы не хотели бы менять. Каковы ваши действия?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume24" id="r241" value="1">
+            <label for="r241">Сообщите менеджеру, что готовы работать все эти выходные</label>
+            <input type="radio" name="resume24" id="r242" value="2">
+            <label for="r242">Сообщите своему менеджеру о том, что можете выйти на работу в эти выходные, но вам необходимо изменить свои планы</label>
+            <input type="radio" name="resume24" id="r243" value="3">
+            <label for="r243">Уточните у других коллег, смогут ли они вас подменить в эти выходные</label>
+            <input type="radio" name="resume24" id="r244" value="4">
+            <label for="r244">Сообщите менеджеру, что не можете выйти на работу. Ваши планы на выходные очень важны для вас.</label>
+            <input type="radio" name="resume25" id="r245" value="5">
+            <label for="r245">Сообщите менеджеру о том, что вы можете выйти на работу, но позже сообщите ему о том, что внезапно заболели</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">25. Когда кто-то на меня кричит, повышает голос, мои действия или реакция?</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume25" id="r251" value="1">
+            <label for="r251">Какое-то время избегать человека</label>
+            <input type="radio" name="resume25" id="r252" value="2">
+            <label for="r252">Уточню у человека причину его поведения</label>
+            <input type="radio" name="resume25" id="r253" value="3">
+            <label for="r253">Займу позицию оборонения</label>
+            <input type="radio" name="resume25" id="r254" value="4">
+            <label for="r254">Извинюсь</label>
+            <input type="radio" name="resume25" id="r255" value="5">
+            <label for="r255">Разозлюсь</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">26. Я почти всегда прихожу вовремя. Никогда не опаздываю.</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume26" id="r261" value="1">
+            <label for="r261">Абсолютно согласен</label>
+            <input type="radio" name="resume26" id="r262" value="2">
+            <label for="r262">Согласен</label>
+            <input type="radio" name="resume26" id="r263" value="3">
+            <label for="r263">Не отрицаю, но и не соглашаюсь</label>
+            <input type="radio" name="resume26" id="r264" value="4">
+            <label for="r264">Не согласен</label>
+            <input type="radio" name="resume26" id="r265" value="5">
+            <label for="r265">Абсолютно не согласен</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">27. Я считаю, что сотрудники могут позволить себе брать немного еды из ресторана, если им мало платят.</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume27" id="r271" value="1">
+            <label for="r271">Абсолютно согласен</label>
+            <input type="radio" name="resume27" id="r272" value="2">
+            <label for="r272">Согласен</label>
+            <input type="radio" name="resume27" id="r273" value="3">
+            <label for="r273">Не отрицаю, но и не соглашаюсь</label>
+            <input type="radio" name="resume27" id="r274" value="4">
+            <label for="r274">Не согласен</label>
+            <input type="radio" name="resume27" id="r275" value="5">
+            <label for="r275">Абсолютно не согласен</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">28. Иногда приходится игнорировать правила безопасности, чтобы выполнить определенную задачу.</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume28" id="r281" value="1">
+            <label for="r281">Абсолютно согласен</label>
+            <input type="radio" name="resume28" id="r282" value="2">
+            <label for="r282">Согласен</label>
+            <input type="radio" name="resume28" id="r283" value="3">
+            <label for="r283">Не отрицаю, но и не соглашаюсь</label>
+            <input type="radio" name="resume28" id="r284" value="4">
+            <label for="r284">Не согласен</label>
+            <input type="radio" name="resume28" id="r285" value="5">
+            <label for="r285">Абсолютно не согласен</label>
+          </div>
+          <div class="send-resume__block">
+            <p class="block__title">29. Люди говорят, что я всегда хорошо следую инструкциям.</p>
+            <p class="block__text">Пожалуйста, выберите один из предложенных ниже вариантов:</p>
+            <input type="radio" name="resume29" id="r291" value="1">
+            <label for="r291">Абсолютно согласен</label>
+            <input type="radio" name="resume29" id="r292" value="2">
+            <label for="r292">Согласен</label>
+            <input type="radio" name="resume29" id="r293" value="3">
+            <label for="r293">Не отрицаю, но и не соглашаюсь</label>
+            <input type="radio" name="resume29" id="r294" value="4">
+            <label for="r294">Не согласен</label>
+            <input type="radio" name="resume29" id="r295" value="5">
+            <label for="r295">Абсолютно не согласен</label>
+          </div>
+          <div class="send-resume__block send-resume__block--last">
+            <input type="file" name="resume30" id="r301" value="1">
+            <div class="block__file"><i class="fas fa-paperclip"></i>
+              <label class="send-resume__file" for="r301">Прикрепите резюме </label>
+            </div>
+            <input type="checkbox" name="resume30" id="r302" value="1">
+            <label for="r302">Даю свое согласию на обработку персональных данных</label>
+          </div>
+          <button class="send-resume__button base-button" type="submit">отправить Анкету</button>
+        </form>
+      </div>
+    </div>
+    <div class="header--replace"></div>
+    <div class="top-slider">
+      <div class="top-slider__container container">
+        <div class="top-slider__block">
+          <h3 class="top-slider__text">Хочу</h3>
+          <h3 class="top-slider__text--middle-text">Работать</h3>
+          <h3 class="top-slider__text--small-text">в BURGER KING!</h3><a class="top-slider__button base-button" href="vacancy.html">Найти Вакансию</a>
+        </div>
+        <div class="top-slider__block--small">
+          <h3 class="top-slider__text">Хочу Работать</h3>
+          <h3 class="top-slider__text--small-text">в BURGER KING!</h3><a class="top-slider__button base-button" href="vacancy.html">Найти Вакансию</a>
+        </div>
+      </div>
+    </div>
+    <div class="three-steps">
+      <div class="three-steps__container container">
+        <h2 class="three-steps__title">3 Простых Шага</h2>
+        <h2 class="three-steps__title-2">До Работы Твоей Мечты</h2>
+        <div class="three-steps__steps">
+              <div class="steps__block">
+                <h2 class="steps__position">1</h2>
+                <div class="steps__image" style="background-image: url(static/img/medical-history.png);"></div>
+                <h2 class="steps__name">Резюме Анкета</h2>
+                <p class="steps__text">Choose from a selection of tastilicious toppings to create your own pizza</p>
+              </div>
+              <div class="steps__block">
+                <h2 class="steps__position">2</h2>
+                <div class="steps__image" style="background-image: url(static/img/customer-service.png);"></div>
+                <h2 class="steps__name">Телефонное Интервью</h2>
+                <p class="steps__text">Choose from a selection of tastilicious toppings to create your own pizza</p>
+              </div>
+              <div class="steps__block">
+                <h2 class="steps__position">3</h2>
+                <div class="steps__image" style="background-image: url(static/img/meeting.png);"></div>
+                <h2 class="steps__name">Личная Встреча</h2>
+                <p class="steps__text">Choose from a selection of tastilicious toppings to create your own pizza</p>
+              </div>
+        </div><a class="three-steps__button base-button send-resume-button" href="#">Отправить Анкету </a>
+      </div>
+    </div>
+    <div class="main-send">
+      <div class="send" style="background-color:#ee7700;">
+        <div class="send__container container">
+          <div class="send__text">
+            <h3 class="send__text__first">Готов С Нами <span>Работать?</span></h3>
+            <h3 class="send__text__second">Вперед!</h3>
+            <h3 class="send__text__third">НАПИШИ <span>нам</span></h3>
+          </div><a class="send__button base-button send-resume-button" href="#">Отправить Анкету</a>
+        </div>
+      </div>
+    </div>
+    <div class="career-block">
+      <div class="career-block__container container">
+        <h2 class="career-block__title">Твой Карьерный Рост</h2>
+        <div class="career">
+          <div class="career__titles-block">
+            <div class="career__left-arrow"></div>
+            <h2 class="career__main-title">Повар| Кассир</h2>
+            <div class="career__right-arrow"></div>
+            <div class="career__titles">
+              <div class="career__title-section">
+                <div class="career__label">
+                  <h3 class="career__title career__title--first">Повар| Кассир</h3>
+                </div>
+                <div class="career__diagram">
+                  <div class="career__line career__line--first"></div>
+                  <div class="career__round career__round--first"></div>
+                  <div class="career__small-round career__small-round--first"></div>
+                </div>
+              </div>
+              <div class="career__title-section">
+                <div class="career__label">
+                  <h3 class="career__title">Координатор</h3>
+                </div>
+                <div class="career__diagram">
+                  <div class="career__line"></div>
+                  <div class="career__round"></div>
+                  <div class="career__small-round"></div>
+                </div>
+              </div>
+              <div class="career__title-section">
+                <div class="career__label">
+                  <h3 class="career__title">Старший Координатор</h3>
+                </div>
+                <div class="career__diagram">
+                  <div class="career__line"></div>
+                  <div class="career__round"></div>
+                  <div class="career__small-round"></div>
+                </div>
+              </div>
+              <div class="career__title-section">
+                <div class="career__label">
+                  <h3 class="career__title">Заместитель Директора</h3>
+                </div>
+                <div class="career__diagram">
+                  <div class="career__line"></div>
+                  <div class="career__round"></div>
+                  <div class="career__small-round"></div>
+                </div>
+              </div>
+              <div class="career__title-section">
+                <div class="career__label">
+                  <h3 class="career__title">Директор</h3>
+                </div>
+                <div class="career__diagram">
+                  <div class="career__line"></div>
+                  <div class="career__round"></div>
+                  <div class="career__small-round"></div>
+                </div>
+              </div>
+              <div class="career__title-section">
+                <div class="career__label">
+                  <h3 class="career__title">Территориальный Упраляющий</h3>
+                </div>
+                <div class="career__diagram">
+                  <div class="career__line career__line--last"></div>
+                  <div class="career__round"></div>
+                  <div class="career__small-round"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="career__section-block" id="career-section">
+            <div class="career__section career__section--first" data-tab-value="Повар| Кассир" id="Повар| Кассир">
+              <p class="career__paragraph">Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей</p>
+              <div class="career__info">
+                <p>Заработная Плата</p>
+                <h3 class="career__salary">150 000 т</h3>
+                <p>Сроки Работы Около</p>
+                <h3 class="career__time">6 месяцев</h3>
+              </div>
+            </div>
+            <div class="career__section" data-tab-value="Координатор" id="Координатор">
+              <p class="career__paragraph">Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей</p>
+              <div class="career__info">
+                <p>Заработная Плата</p>
+                <h3 class="career__salary">150 000 т</h3>
+                <p>Сроки Работы Около</p>
+                <h3 class="career__time">7 месяцев</h3>
+              </div>
+            </div>
+            <div class="career__section" data-tab-value="Старший Координатор" id="Старший Координатор">
+              <p class="career__paragraph">Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей</p>
+              <div class="career__info">
+                <p>Заработная Плата</p>
+                <h3 class="career__salary">150 000 т</h3>
+                <p>Сроки Работы Около</p>
+                <h3 class="career__time">8 месяцев</h3>
+              </div>
+            </div>
+            <div class="career__section" data-tab-value="Заместитель Директора" id="Заместитель Директора">
+              <p class="career__paragraph">Следующий твой шаг — ты можешь стать менеджером смены! для наших гостей</p>
+              <div class="career__info">
+                <p>Заработная Плата</p>
+                <h3 class="career__salary">150 000 т</h3>
+                <p>Сроки Работы Около</p>
+                <h3 class="career__time">9 месяцев</h3>
+              </div>
+            </div>
+            <div class="career__section" data-tab-value="Директор" id="Директор">
+              <p class="career__paragraph">Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей</p>
+              <div class="career__info">
+                <p>Заработная Плата</p>
+                <h3 class="career__salary">150 000 т</h3>
+                <p>Сроки Работы Около</p>
+                <h3 class="career__time">10 месяцев</h3>
+              </div>
+            </div>
+            <div class="career__section" data-tab-value="Территориальный Упраляющий" id="Территориальный Упраляющий">
+              <p class="career__paragraph">Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей</p>
+              <div class="career__info">
+                <p>Заработная Плата</p>
+                <h3 class="career__salary">150 000 т</h3>
+                <p>Сроки Работы Около</p>
+                <h3 class="career__time">11 месяцев</h3>
+              </div>
+            </div>
+          </div>
+        </div><a class="career-block__button base-button learn-more-button" href="#">Узнать Больше</a>
+      </div>
+    </div>
+    <div class="jobs">
+      <h2 class="jobs__title">Актуальные Вакансии</h2>
+      <div class="vacancy container">
+        <div class="vacancy__titles-block">
+          <div class="vacancy__titles">
+            <input class="vacancy__input" type="radio" name="tab" value="Повар" checked id="text-tab-Повар">
+            <label class="vacancy__label" for="text-tab-Повар">
+              <h3 class="vacancy__title">Повар</h3>
+              <div class="vacancy__diagram"></div>
+            </label>
+            <input class="vacancy__input" type="radio" name="tab" value="Кассир" id="text-tab-Кассир">
+            <label class="vacancy__label" for="text-tab-Кассир">
+              <h3 class="vacancy__title">Кассир</h3>
+              <div class="vacancy__diagram"></div>
+            </label>
+            <input class="vacancy__input" type="radio" name="tab" value="Курьер" id="text-tab-Курьер">
+            <label class="vacancy__label" for="text-tab-Курьер">
+              <h3 class="vacancy__title">Курьер</h3>
+              <div class="vacancy__diagram"></div>
+            </label>
+            <input class="vacancy__input" type="radio" name="tab" value="Менеджер" id="text-tab-Менеджер">
+            <label class="vacancy__label vacancy__label--last" for="text-tab-Менеджер">
+              <h3 class="vacancy__title">Менеджер</h3>
+              <div class="vacancy__diagram"></div>
+            </label>
+          </div>
+        </div>
+        <div class="vacancy__section-block">
+          <div class="vacancy__section vacancy__section--first" data-tab-value="Повар" id="Повар">
+            <p class="vacancy__text">Повар<i class="fas fa-sort-down"></i></p>
+            <p class="vacancy__paragraph">Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную атмосферу в коллективе,  предлагаем нашим людям справедливую оплату труда, безопасные условия работы,  привлекательный социальный пакет, а главное способствуем личностному и профессиональному развитию сотрудников.</p>
+          </div>
+          <div class="vacancy__section" data-tab-value="Кассир" id="Кассир">
+            <p class="vacancy__text">Кассир<i class="fas fa-sort-down"></i></p>
+            <p class="vacancy__paragraph">Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную атмосферу в коллективе,  предлагаем нашим людям справедливую оплату труда, безопасные условия работы,  привлекательный социальный пакет, а главное способствуем личностному и профессиональному развитию сотрудников.</p>
+          </div>
+          <div class="vacancy__section" data-tab-value="Курьер" id="Курьер">
+            <p class="vacancy__text">Курьер<i class="fas fa-sort-down"></i></p>
+            <p class="vacancy__paragraph">Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную атмосферу в коллективе,  предлагаем нашим людям справедливую оплату труда, безопасные условия работы,  привлекательный социальный пакет, а главное способствуем личностному и профессиональному развитию сотрудников.</p>
+          </div>
+          <div class="vacancy__section" data-tab-value="Менеджер" id="Менеджер">
+            <p class="vacancy__text">Менеджер<i class="fas fa-sort-down"></i></p>
+            <p class="vacancy__paragraph">Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную </p>
+          </div>
+        </div>
+      </div><a class="jobs__button base-button" href="vacancy.html">Все Вакансии  </a>
+      <div class="container"> 
+        <div class="jobs__image jobs__image--1"><img src="static/img/human-picture-1.png"></div>
+        <div class="jobs__image jobs__image--2"><img src="static/img/human-picture-2.png"></div>
+        <div class="jobs__image jobs__image--3"><img src="static/img/human-picture-4.png"></div>
+        <div class="jobs__image jobs__image--4"><img src="static/img/human-picture-5.png"></div>
+        <div class="jobs__image jobs__image--5"><img src="static/img/human-picture-3.png"></div>
+        <h2 class="jobs__title jobs__title--second">Узнай Историю</h2>
+        <h2 class="jobs__title--third">Нашего Успеха</h2>
+        <p class="jobs__paragraph">Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную атмосферу в коллективе,  предлагаем нашим людям</p><a class="jobs__button--success base-button learn-more-button" href="#">Узнать Больше </a>
+      </div>
+    </div>
+    <div class="join">
+      <div class="join__text-block">
+        <h3 class="join__title">Присоединяйся </h3>
+        <h3 class="join__title">К Нашей <span>Команде!</span></h3>
+        <div class="join__underline"></div>
+      </div>
+    </div>
+    <div class="connect-block">
+      <div class="connect-block__container container">
+        <div class="connect-block__text-block">
+          <h3 class="connect-block__text">вы можете связаться с нами 
+            <div class="first">и узнать подробнее <br></div> о работе в 
+            <div class="second">Burger King</div>
+          </h3>
+          <h3 class="connect-block__sign">!</h3>
+        </div><a class="connect-block__button base-button learn-more-button" href="#">Узнать Больше</a>
+      </div>
+    </div>
+    <div class="video-block">
+      <h2 class="video-block__title">Откройте Для Себя</h2>
+      <h2 class="video-block__title--second">Burger King</h2>
+      <div class="video-block__container container">
+        <div class="video-section">
+          <div class="video-section__container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dl16e_mG6hg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="video-section__title">Гибкость</p>
+          <p class="video-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+        <div class="video-section">
+          <div class="video-section__container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dl16e_mG6hg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="video-section__title">Веселое Место Работы</p>
+          <p class="video-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+        <div class="video-section">
+          <div class="video-section__container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dl16e_mG6hg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="video-section__title">Веселое Место Работы</p>
+          <p class="video-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+        <div class="video-section">
+          <div class="video-section__container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dl16e_mG6hg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="video-section__title">Гибкость</p>
+          <p class="video-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+      </div>
+    </div>
+    <div class="connect-block connect-block--second">
+      <div class="connect-block__container container">
+        <div class="connect-block__text-block">
+          <h3 class="connect-block__text">вы можете связаться 
+            <div class="first">с нами и узнать<br></div> 
+            <div class="third">подробнее о работе в</div> 
+            <div class="second">Burger King</div>
+          </h3>
+          <h3 class="connect-block__sign">!</h3>
+        </div><a class="connect-block__button base-button learn-more-button" href="#">Узнать Больше</a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__top-side">
+        <div class="top-side container"><a class="footer__logo" href="index.html"></a>
+          <div class="footer__list">
+            <ul class="footer__menu">
+              <li class="menu__item"><a class="menu__link" href="#">Карьера</a></li>
+              <li class="menu__item"><a class="menu__link" href="vacancy.html">Вакансии</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Герои c.a.r.e</a></li>
+            </ul>
+            <ul class="footer__menu">
+              <li class="menu__item"><a class="menu__link" href="referral.html">Friend Referral</a></li>
+              <li class="menu__item"><a class="menu__link" href="benefits.html">Benefits</a></li>
+              <li class="menu__item"><a class="menu__link" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <div class="contacts__icon"><i class="fas fa-phone"></i></div>
+            <div class="contacts__info">
+              <div class="contacts__phone">8 (727) 469-63-58</div>
+              <div class="contacts__phone">8 (727) 390-57-07</div>
+              <div class="contacts__socials"><a class="contacts__social twitter" href="#"><i class="fab fa-twitter"></i></a><a class="contacts__social facebook" href="#"><i class="fab fa-facebook-f"></i></a><a class="contacts__social instagram" href="#"> <i class="fab fa-instagram"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom-side">
+        <div class="show-all" style="display: none;"></div>
+        <div class="bottom-side container">
+          <div class="footer__copyright">Copyright &copy 2018</div>
+          <div class="footer__designed">Designed by Slonworks</div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

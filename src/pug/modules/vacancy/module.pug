@@ -1,0 +1,14 @@
+.vacancy.container
+    .vacancy__titles-block
+        .vacancy__titles
+            each tab, i in vacancy
+                input.vacancy__input(type="radio", name="tab", value= tab.title, checked= i == 0, id="text-tab-" + tab.title)
+                label.vacancy__label(class= tab.last ? "vacancy__label--last": "", for="text-tab-" + tab.title )
+                    h3.vacancy__title= tab.title
+                    .vacancy__diagram
+    .vacancy__section-block
+        each tab in vacancy
+            .vacancy__section(data-tab-value= tab.title, id=tab.title, class= tab.first ? "vacancy__section--first": "",)
+                p.vacancy__text= tab.title
+                    i.fas.fa-sort-down
+                p.vacancy__paragraph= tab.paragraphs

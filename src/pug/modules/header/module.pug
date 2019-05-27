@@ -1,0 +1,429 @@
+.header
+    .header__container.container
+        a(href='index.html').header__logo
+        a(href='#').header__button.base-button.send-resume-button отправить анкету
+        .header__dropdown 
+        ul.header__menu
+            li.menu__item(class= (activePage== 'vacancy') ? 'page-active':'') #[a.menu__link(href='vacancy.html') Вакансии]
+            li.menu__item(class= (activePage== 'care') ? 'page-active':'') #[a.menu__link(href='#') Герои C.A.R.E]
+            li.menu__item(class= (activePage== 'referral') ? 'page-active':'') #[a.menu__link(href='referral.html') Friend Referral]
+            li.menu__item(class= (activePage== 'benefits') ? 'page-active':'') #[a.menu__link(href='benefits.html') Benefits]
+            li.menu__item(class= (activePage== 'office') ? 'page-active':'') #[a.menu__link(href='#') Office]
+            li.menu__item(class= (activePage== 'university') ? 'page-active':'') #[a.menu__link(href='university.html') Университет BKU] 
+            li.menu__item(class= (activePage== 'faq') ? 'page-active':'') #[a.menu__link(href='faq.html') FAQ]
+            li.menu__item(class= (activePage== 'contacts') ? 'page-active':'') #[a.menu__link(href='contacts.html') Контакты]
+        .header__language
+            .language__block
+                p.language__title RU
+                i.fas.fa-sort-down
+            ul.language__list
+                li.language__item RU
+                li.language__item KAZ
+                li.language__item ENG
+    .header__mobile.container
+        .header__mobile--top
+            .header__language
+                .language__block
+                    p.language__title RU
+                    i.fas.fa-sort-down
+                ul.language__list
+                    li.language__item RU
+                    li.language__item KAZ
+                    li.language__item ENG
+            i.fas.fa-times.header__close
+        ul.header__menu.header__menu--mobile
+            li.menu__item(class= (activePage== 'vacancy') ? 'page-active':'') #[a.menu__link(href='vacancy.html') Вакансии]
+            li.menu__item(class= (activePage== 'care') ? 'page-active':'') #[a.menu__link(href='#') Герои C.A.R.E]
+            li.menu__item(class= (activePage== 'referral') ? 'page-active':'') #[a.menu__link(href='referral.html') Friend Referral]
+            li.menu__item(class= (activePage== 'benefits') ? 'page-active':'') #[a.menu__link(href='benefits.html') Benefits]
+            li.menu__item(class= (activePage== 'office') ? 'page-active':'') #[a.menu__link(href='#') Office]
+            li.menu__item(class= (activePage== 'university') ? 'page-active':'') #[a.menu__link(href='university.html') Университет BKU] 
+            li.menu__item(class= (activePage== 'faq') ? 'page-active':'') #[a.menu__link(href='faq.html') FAQ]
+            li.menu__item(class= (activePage== 'contacts') ? 'page-active':'') #[a.menu__link(href='contacts.html') Контакты]
+.question-more
+    .question-more__container.container
+        i.fas.fa-times.question-more__close
+        h2.question-more__title Задай Вопрос
+        form(action="index.html").question-more__form
+            input(type='text' placeholder='ФИО' name="1resume1").question-more__name
+            input(type='text' placeholder='Телефон' name="1resume2").question-more__phone
+            textarea(type='textarea' placeholder='Сообщение' name="1resume3").question-more__message
+            button(type='submit').question-more__button.base-button отправить
+.send-resume
+    .send-resume__container.container
+        i.fas.fa-times.send-resume__close
+        h2.send-resume__title Анкета
+        form(action="index.html").send-resume__form
+            select(size='1' name="2resume1" )
+                option(value='1') Интересующая Должность
+                option(value='2') Кассир
+                option(value='3') Повар
+            .send-resume__select
+                p.send-resume__select-title
+                i.fas.fa-sort-down
+                .send-resume__option-block
+            input(type='text' placeholder='ФИО' name="2resume2" ).send-resume__name
+            select(size='1')
+                option(value='1') Где Вы Хотите Работать
+                option(value='2') В Ресторане
+                option(value='3') Не в Ресторане
+            .send-resume__select
+                p.send-resume__select-title
+                i.fas.fa-sort-down
+                .send-resume__option-block
+            select(size='1' name="2resume3").send-resume--half
+                option(value='1') Гражданство
+                option(value='2') Казахстана
+                option(value='3') Не Казахстана
+            .send-resume__select.send-resume--half
+                p.send-resume__select-title
+                i.fas.fa-sort-down
+                .send-resume__option-block
+            select(size='1' name="2resume4").send-resume--half
+                option(value='1') Город
+                option(value='2') Алматы
+                option(value='3') Не Алматы
+            .send-resume__select.send-resume--half
+                p.send-resume__select-title
+                i.fas.fa-sort-down
+                .send-resume__option-block
+            input(type='text' placeholder='Дата Рождения' name="2resume5").send-resume--half
+            input(type='text' placeholder='Телефон' name="2resume6"  ).send-resume--half
+            .send-resume__block
+                p.block__title 1. Вы ранее работали в Burger King?
+                input(type="radio" name="resume1" id="r11" value="1")
+                label(for="r11") Да
+                input(type="radio" name="resume1" id="r12" value="2")
+                label(for="r12") Нет
+                .send-resume__condition
+                    p.block__text.block__text--select Если #[span(style='font-weight: bold;') да], пожалуйста, укажите ресторан
+                    select(size='1')
+                        option(value='1') Ресторан
+                        option(value='2') Не ресторан
+                    .send-resume__select.send-resume--half
+                        p.send-resume__select-title
+                        i.fas.fa-sort-down
+                        .send-resume__option-block
+            .send-resume__block
+                p.block__title 2. Вы достигли возраста 18 лет и более?
+                input(type="radio" name="resume2" id="r21" value="1")
+                label(for="r21") Да
+                input(type="radio" name="resume2" id="r22" value="2")
+                label(for="r22") Нет
+            .send-resume__block
+                p.block__title 3. Из какого источника вы услышали информацию о работе?
+                input(type="radio" name="resume3" id="r31" value="1")
+                label(for="r31") От друга
+                input(type="radio" name="resume3" id="r32" value="2")
+                label(for="r32") Официальный вебсайт компании Burger King
+                input(type="radio" name="resume3" id="r33" value="3")
+                label(for="r33") Страницы в социальных сетях бренда Burger King
+                input(type="radio" name="resume3" id="r34" value="4")
+                label(for="r34") По работе через другого работодателя
+                input(type="radio" name="resume3" id="r35" value="5")
+                label(for="r35") В ресторане
+                input(type="radio" name="resume3" id="r36" value="6")
+                label(for="r36") Центр занятости
+            .send-resume__block
+                p.block__title 4. На текущий момент вы получаете какую-либо квалификацию, учитесь в школе, колледже или университете (включая очное и заочное отделение)?
+                input(type="radio" name="resume4" id="r41" value="1")
+                label(for="r41") Да
+                input(type="radio" name="resume4" id="42" value="2")
+                label(for="r42") Нет
+            .send-resume__block
+                p.block__title 5. В какие дни среди рабочей недели вы свободны (доступны) для работы?
+                input(type="checkbox" name="resume5" id="r51" value="1")
+                label(for="r51") Понедельник
+                input(type="checkbox" name="resume5" id="r52" value="2")
+                label(for="r52") Вторник
+                input(type="checkbox" name="resume5" id="r53" value="3")
+                label(for="r53") Среда
+                input(type="checkbox" name="resume5" id="r54" value="4")
+                label(for="r54") Четверг
+                input(type="checkbox" name="resume5" id="r55" value="5")
+                label(for="r55") Пятница
+            .send-resume__block
+                p.block__title 6. В какой временной промежуток в течения дня (во время рабочей недели) вы доступны.
+                p.block__text Просьба, выбрать все возможные варианты.
+                input(type="checkbox" name="resume6" id="r61" value="1")
+                label(for="r61") 08:00-12:00
+                input(type="checkbox" name="resume6" id="r62" value="2")
+                label(for="r62") 12:00-17:00
+                input(type="checkbox" name="resume6" id="r63" value="3")
+                label(for="r63") 17:00-23:00
+                input(type="checkbox" name="resume6" id="r64" value="4")
+                label(for="r64") Поздно ночью
+                input(type="checkbox" name="resume6" id="r65" value="5")
+                label(for="r65") Не доступен
+            .send-resume__block
+                p.block__title 7. В какой выходной день вы доступны для работы?
+                input(type="checkbox" name="resume7" id="r71" value="1")
+                label(for="r71") Суббота
+                input(type="checkbox" name="resume7" id="r72" value="2")
+                label(for="r72") Воскресенье
+            .send-resume__block
+                p.block__title 8. В какой временной промежуток в течения дня (во время рабочей недели) вы доступны.
+                p.block__text Просьба, выбрать все возможные варианты.
+                input(type="checkbox" name="resume8" id="r81" value="1")
+                label(for="r81") 08:00-12:00
+                input(type="checkbox" name="resume8" id="r82" value="2")
+                label(for="r82") 12:00-17:00
+                input(type="checkbox" name="resume8" id="r83" value="3")
+                label(for="r83") 17:00-23:00
+                input(type="checkbox" name="resume8" id="r84" value="4")
+                label(for="r84") Поздно ночью
+                input(type="checkbox" name="resume8" id="r85" value="5")
+                label(for="r85") Не доступен
+            .send-resume__block
+                p.block__title 9. Вы рассматриваете полную занятость или частичную занятость?
+                input(type="radio" name="resume9" id="r91" value="1")
+                label(for="r91") Полная занятость
+                input(type="radio" name="resume9" id="r92" value="2")
+                label(for="r92") Частичная занятость
+                input(type="radio" name="resume9" id="r93" value="3")
+                label(for="r93") Не имеет значения
+            .send-resume__block
+                p.block__title 10. Ситуационный вопрос. Представьте следующую ситуацию: Ваша смена закончилась, но гость ресторана попросил вас о помощи в разрешении какого-либо вопроса, когда вы уже планировали уходить из ресторана, каковы ваши действия?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume10" id="r101" value="1")
+                label(for="r101") Поможете ему (-ей)
+                input(type="radio" name="resume10" id="r102" value="2")
+                label(for="r102") Принесете свои извинения и сообщите о том, что ваша смена уже закончилась
+                input(type="radio" name="resume10" id="r103" value="3")
+                label(for="r103") Укажете на другого менеджера смены
+            .send-resume__block
+                p.block__title 11. Когда вы осознаете, что не знаете каким образом завершить поставленную перед вами задачу, каковы ваши действия?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume11" id="r111" value="1")
+                label(for="r111") Попросите прямого руководителя (супервайзера) закончить задачу
+                input(type="radio" name="resume11" id="r112" value="2")
+                label(for="r112") Попросите кого-либо наглядно показать механизм для успешного выполнения задачи в будущем
+                input(type="radio" name="resume11" id="r113" value="3")
+                label(for="r113") Найдете кого-то, кто справляется с задачей и попросите его выполнить ее
+                input(type="radio" name="resume11" id="r114" value="4")
+                label(for="r114") Не станете завершать задачу, так как каждый должен выполнять работу которую ему объяснили заранее
+            .send-resume__block
+                p.block__title 12. В Burger King вам обычно дают видение на ваш прогресс и совет на токаким образом вы можете повысить свою эффективность (при необходимости), как вы на это реагируете?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume12" id="r121" value="1")
+                label(for="r121") Отлично, мне нравится получать обратную связь
+                input(type="radio" name="resume12" id="r122" value="2")
+                label(for="r122") Мне все равно, меня это не волнует
+                input(type="radio" name="resume12" id="r123" value="3")
+                label(for="r123") Мне нравится этот подход
+                input(type="radio" name="resume12" id="r124" value="4")
+                label(for="r124") Я предпочитаю получать совет в том случае, когда считаю нужным
+            .send-resume__block
+                p.block__title 13. Один из членов команды помог вам сегодня, ваша реакция и действия?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume13" id="r131" value="1")
+                label(for="r131") Уточните как бы они хотели, чтобы их отблагодарили и сделаете это
+                input(type="radio" name="resume13" id="r132" value="2")
+                label(for="r132") Почему вам нужно их благодарить. Они выполняли свою работу
+                input(type="radio" name="resume13" id="r133" value="3")
+                label(for="r133") Сообщите менеджеру о поступке коллеги и его (-ее) успехах
+                input(type="radio" name="resume13" id="r134" value="4")
+                label(for="r134") Ничего, поощрение и признание заслуг кого-либо –работа менеджера
+            .send-resume__block
+                p.block__title 14. Кто-то допустил ошибку, ваши действия?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume14" id="r141" value="1")
+                label(for="r141") Оставлю это на менеджера, это не моя работа
+                input(type="radio" name="resume14" id="r142" value="2")
+                label(for="r142") Я сообщу о проступке при всех членах команды
+                input(type="radio" name="resume14" id="r143" value="3")
+                label(for="r143") Я отведу человека в сторону и дам поддержку
+                input(type="radio" name="resume14" id="r144" value="4")
+                label(for="r144") Я сообщу менеджеру об ошибке
+                input(type="radio" name="resume14" id="r145" value="5")
+                label(for="r145") Если ошибка затронет пищевую безопасность или что то важное, то вместе с коллегой сообщу менеджеру, так как в результате ошибки могут пострадать гости и в целом бренд.
+            .send-resume__block
+                p.block__title 15. Вас попросили перейти на замену с кассы на кухню готовить бургеры,ваша реакция, действия?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume15" id="r151" value="1")
+                label(for="r151") Воодушевлен-Мне нравится справляться с новыми задачами и мне бы хотелось помогать команде
+                input(type="radio" name="resume15" id="r152" value="2")
+                label(for="r152") Раздражен-Я предпочитаю заниматься тем, что знаю, оставаться на привычном месте
+                input(type="radio" name="resume15" id="r153" value="3")
+                label(for="r153") Доволен-в прошлый раз я наделал ошибок, но возьмусь за дело
+                input(type="radio" name="resume15" id="r154" value="4")
+                label(for="r154") Недоволен-Мне не хочется идти на замену
+            .send-resume__block
+                p.block__title 16. Нам необходимо продать 500 наггетсов на текущей неделе, каким образом вы сможете поспособствовать реализации этой задачи?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume16" id="r161" value="1")
+                label(for="r161") Я помогу выполнить цель в 500 наггетсов и буду рад выполнить эту задачу
+                input(type="radio" name="resume16" id="r162" value="2")
+                label(for="r162") 500? Мы можем повысить эффективность и продать намного больше, я поставлю цель в 1 000
+                input(type="radio" name="resume16" id="r163" value="3")
+                label(for="r163") Ничего, я не работаю за кассой, таким образом никак не могу повлиять на результат
+                input(type="radio" name="resume16" id="r164" value="4")
+                label(for="r164") Цели меня не мотивируют, я просто выполняю работу
+            .send-resume__block
+                p.block__title 17. Гость вернул картофель фри и пожаловался на качество, что вы сделаете? Пожалуйста, выберите один из предложенных ниже вариантов:
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume17" id="r171" value="1")
+                label(for="r171") Примите обратно и незамедлительно их замените
+                input(type="radio" name="resume17" id="r172" value="2")
+                label(for="r172") Гости часто жалуются, попробую фри, прежде чем принимать какое-либо решение
+                input(type="radio" name="resume17" id="r173" value="3")
+                label(for="r173") Попрошу менеджера, поставлю его в известность, так как это его работа разбираться с жалобами гостей
+                input(type="radio" name="resume17" id="r174" value="4")
+                label(for="r174") Улыбнусь, принесу свои извинения, заменю их и уточню чем еще я могу помочь
+            .send-resume__block
+                p.block__title 18. Почему мы надеваем фартук в кухонной зоне?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume18" id="r181" value="1")
+                label(for="r181") В целях защиты униформы
+                input(type="radio" name="resume18" id="r182" value="2")
+                label(for="r182") В целях личной безопасности
+                input(type="radio" name="resume18" id="r183" value="3")
+                label(for="r183") Пищевая безопасность
+                input(type="radio" name="resume18" id="r184" value="4")
+                label(for="r184") Часть униформы
+            .send-resume__block
+                p.block__title 19. Ситуационный вопрос. Вы опаздываете на смену, ваши действия?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume19" id="r191" value="1")
+                label(for="r191") Ничего, нет моей вины в том, что задерживается автобус
+                input(type="radio" name="resume19" id="r192" value="2")
+                label(for="r192") Позвоню менеджеру и предупрежу о том, во сколько я буду на смене
+                input(type="radio" name="resume19" id="r193" value="3")
+                label(for="r193") Не пойду на работу, все равно уже слишком поздно
+                input(type="radio" name="resume19" id="r194" value="4")
+                label(for="r194") Напишу другу, который тоже на смене и предупрежу команду
+            .send-resume__block
+                p.block__title 20. Вы замечаете, что лист салата потемнел (изменил цвет с зеленого на коричневый), когда уже почти положили его на котлету, ваши действия?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume20" id="r201" value="1")
+                label(for="r201") В любом случае, положу на бургер и закончу заказ
+                input(type="radio" name="resume20" id="r202" value="2")
+                label(for="r202") Выброшу его и всю остальную связку листьев салата
+                input(type="radio" name="resume20" id="r203" value="3")
+                label(for="r203") Сообщу менеджеру
+                input(type="radio" name="resume20" id="r204" value="4")
+                label(for="r204") Предложу менеджеру использовать эти листья салата для бургеров, предназначенных для персонала
+            .send-resume__block
+                p.block__title 21. Вам предложили возможность обучиться новым навыкам в Burger King,ваши действия?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume21" id="r211" value="1")
+                label(for="r211") Откажусь- Я обладаю хорошими навыками, необходимыми для моей работы и у меня нет времени
+                input(type="radio" name="resume21" id="r212" value="2")
+                label(for="r212") Звучит волнительно, Я всегда интересуюсь тем, чтобы улучшить свои навыки
+                input(type="radio" name="resume21" id="r213" value="3")
+                label(for="r213") Соглашусь, мне кажется, что мой менеджер ожидает это от меня
+                input(type="radio" name="resume21" id="r214" value="4")
+                label(for="r214") Запрошу больше информации у менеджера
+            .send-resume__block
+                p.block__title 22. Как бы знакомые описали ваше умение адаптироваться к переменам?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume22" id="r221" value="1")
+                label(for="r221") Не очень гибкий
+                input(type="radio" name="resume22" id="r222" value="2")
+                label(for="r222") Менее гибок, чем среднестатистический человек
+                input(type="radio" name="resume22" id="r223" value="3")
+                label(for="r223") Средний уровень гибкости и адаптивности к переменам
+                input(type="radio" name="resume22" id="r224" value="4")
+                label(for="r224") Более гибок, чем среднестатистический человек
+                input(type="radio" name="resume25" id="r225" value="5")
+                label(for="r225") Очень гибкий
+            .send-resume__block
+                p.block__title 23. Что из нижеследующего более всего описывает вашу посещаемость в школе?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume23" id="r231" value="1")
+                label(for="r231") Очень часто отсутствовал
+                input(type="radio" name="resume23" id="r232" value="2")
+                label(for="r232") Я чаще других отсутствовал на уроках
+                input(type="radio" name="resume23" id="r233" value="3")
+                label(for="r233") Я отсутствовал, но не чаще остальных сверстников
+                input(type="radio" name="resume23" id="r234" value="4")
+                label(for="r234") Я почти никогда не пропускал занятия в школе
+                input(type="radio" name="resume25" id="r235" value="5")
+                label(for="r235") Я не ходил в школу
+            .send-resume__block
+                p.block__title 24. Ваш менеджер сообщил вам о том, что вам необходимо будет выйти на работу в эти выходные. У вас есть планы на выходные, которые вы не хотели бы менять. Каковы ваши действия?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume24" id="r241" value="1")
+                label(for="r241") Сообщите менеджеру, что готовы работать все эти выходные
+                input(type="radio" name="resume24" id="r242" value="2")
+                label(for="r242") Сообщите своему менеджеру о том, что можете выйти на работу в эти выходные, но вам необходимо изменить свои планы
+                input(type="radio" name="resume24" id="r243" value="3")
+                label(for="r243") Уточните у других коллег, смогут ли они вас подменить в эти выходные
+                input(type="radio" name="resume24" id="r244" value="4")
+                label(for="r244") Сообщите менеджеру, что не можете выйти на работу. Ваши планы на выходные очень важны для вас.
+                input(type="radio" name="resume25" id="r245" value="5")
+                label(for="r245") Сообщите менеджеру о том, что вы можете выйти на работу, но позже сообщите ему о том, что внезапно заболели
+            .send-resume__block
+                p.block__title 25. Когда кто-то на меня кричит, повышает голос, мои действия или реакция?
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume25" id="r251" value="1")
+                label(for="r251") Какое-то время избегать человека
+                input(type="radio" name="resume25" id="r252" value="2")
+                label(for="r252") Уточню у человека причину его поведения
+                input(type="radio" name="resume25" id="r253" value="3")
+                label(for="r253") Займу позицию оборонения
+                input(type="radio" name="resume25" id="r254" value="4")
+                label(for="r254") Извинюсь
+                input(type="radio" name="resume25" id="r255" value="5")
+                label(for="r255") Разозлюсь
+            .send-resume__block
+                p.block__title 26. Я почти всегда прихожу вовремя. Никогда не опаздываю.
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume26" id="r261" value="1")
+                label(for="r261") Абсолютно согласен
+                input(type="radio" name="resume26" id="r262" value="2")
+                label(for="r262") Согласен
+                input(type="radio" name="resume26" id="r263" value="3")
+                label(for="r263") Не отрицаю, но и не соглашаюсь
+                input(type="radio" name="resume26" id="r264" value="4")
+                label(for="r264") Не согласен
+                input(type="radio" name="resume26" id="r265" value="5")
+                label(for="r265") Абсолютно не согласен
+            .send-resume__block
+                p.block__title 27. Я считаю, что сотрудники могут позволить себе брать немного еды из ресторана, если им мало платят.
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume27" id="r271" value="1")
+                label(for="r271") Абсолютно согласен
+                input(type="radio" name="resume27" id="r272" value="2")
+                label(for="r272") Согласен
+                input(type="radio" name="resume27" id="r273" value="3")
+                label(for="r273") Не отрицаю, но и не соглашаюсь
+                input(type="radio" name="resume27" id="r274" value="4")
+                label(for="r274") Не согласен
+                input(type="radio" name="resume27" id="r275" value="5")
+                label(for="r275") Абсолютно не согласен
+            .send-resume__block
+                p.block__title 28. Иногда приходится игнорировать правила безопасности, чтобы выполнить определенную задачу.
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume28" id="r281" value="1")
+                label(for="r281") Абсолютно согласен
+                input(type="radio" name="resume28" id="r282" value="2")
+                label(for="r282") Согласен
+                input(type="radio" name="resume28" id="r283" value="3")
+                label(for="r283") Не отрицаю, но и не соглашаюсь
+                input(type="radio" name="resume28" id="r284" value="4")
+                label(for="r284") Не согласен
+                input(type="radio" name="resume28" id="r285" value="5")
+                label(for="r285") Абсолютно не согласен
+            .send-resume__block
+                p.block__title 29. Люди говорят, что я всегда хорошо следую инструкциям.
+                p.block__text Пожалуйста, выберите один из предложенных ниже вариантов:
+                input(type="radio" name="resume29" id="r291" value="1")
+                label(for="r291") Абсолютно согласен
+                input(type="radio" name="resume29" id="r292" value="2")
+                label(for="r292") Согласен
+                input(type="radio" name="resume29" id="r293" value="3")
+                label(for="r293") Не отрицаю, но и не соглашаюсь
+                input(type="radio" name="resume29" id="r294" value="4")
+                label(for="r294") Не согласен
+                input(type="radio" name="resume29" id="r295" value="5")
+                label(for="r295") Абсолютно не согласен
+            .send-resume__block.send-resume__block--last
+                input(type="file" name="resume30" id="r301" value="1")
+                .block__file
+                    i.fas.fa-paperclip
+                    label(for="r301").send-resume__file Прикрепите резюме 
+                input(type="checkbox" name="resume30" id="r302" value="1")
+                label(for="r302") Даю свое согласию на обработку персональных данных
+            button(type='submit').send-resume__button.base-button отправить Анкету
+.header--replace

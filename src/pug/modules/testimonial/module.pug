@@ -1,0 +1,8 @@
+.testimonial
+    .testimonial__brackets
+    p.testimonial__text= testimonial.text
+    .testimonial__author
+        .testimonial__image(style="background-image: url(static/img/"+testimonial.image+");")
+        .testimonial__about
+            p.testimonial__name= testimonial.name
+            p.testimonial__job= testimonial.job

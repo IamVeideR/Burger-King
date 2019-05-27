@@ -1,0 +1,1949 @@
+.top-slider {
+    height: 550px;
+    background: url(./../img/top-slider.jpg) center no-repeat, gray;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+    &__block {
+        width: 100%;
+        max-width: 440px;
+        
+        h3 {
+        line-height: 74px;
+        }
+        &--small {
+            display: none;
+        }
+        
+    }
+    &__text {
+        font-size: 75px;
+        color: white;
+
+        &--middle-text {
+            font-size: 80px;
+        }
+        &--small-text {
+            text-transform: none;
+            font-size: 70px;
+            padding-bottom: 20px;
+        } 
+    }
+    &__button {
+        margin-top: 15px;
+        font-size: 26px;
+        width: 235px;
+        height: 55px;
+        line-height: 60px;
+        border-radius: 8px;
+        margin: 0;
+    }
+}
+.main-send {
+    .send {
+        &__button {
+            background-color: $red;
+
+            &:hover {
+                background-color: $dark-red;
+            }
+        }
+    }
+}
+.career-block {
+    padding-top: 110px;
+    padding-bottom: 75px;
+
+    &__title {
+        padding-bottom: 100px;
+    }
+}
+.jobs {
+    padding-top: 110px;
+    height: 1400px;
+    background: url(./../img/jobs-bg.jpg) center no-repeat, $yellow;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+
+    &__image {
+        position: absolute;
+        object-fit: contain;
+        &--1 {
+            top: -120px; 
+            right: -150px; 
+            width: 350px; 
+            height: 350px;
+        }
+        &--2 {
+            top: 130px; 
+            right: -240px; 
+            width: 350px; 
+            height: 350px;
+            z-index: 2;
+        }
+        &--3 {
+            top: 420px; 
+            right: -190px; 
+            width: 350px; 
+            height: 350px;;
+        }
+        &--4 {
+            top: 30px; 
+            left: -200px; 
+            width: 400px; 
+            height: 400px;
+            z-index: 2;
+        }
+        &--5 {
+            top: 370px; 
+            left: -120px; 
+            width: 350px; 
+            height: 350px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__title {
+        color: $brown;
+        &--second {
+            padding-top: 235px;
+            font-size: 60px;
+            line-height: 50px;
+        }
+        &--third {
+            color: $red;
+            font-size: 72px;
+            transform: rotate(-2deg);
+            padding-bottom: 60px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 30px;
+                left: 40%;
+                width: 216px;
+                height: 20px;
+                background: url(./../img/underline.png) center no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+    &__paragraph {
+        display: block;
+        line-height: 30px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 410px;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    &__button {
+        background-color: $red;
+
+        &:hover {
+            background-color: $dark-red;
+        }
+        &--success {
+            color: $brown;
+            background-color: white;
+            &:hover {
+                background-color: $gray;
+            }
+        }
+    }
+}
+.connect-block {
+    background-color: $bg-green;
+
+    &--second {
+        display: none;
+    }
+    &__container {
+        height: 315px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text-block {
+        width: 52%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        font-size: 36px;
+        line-height: 50px;
+        .second {
+            display: inline;
+            font-size: 50px;
+        }
+        .first{
+            display: inline;
+            font-size: 44px;
+        }
+    }
+    &__sign {
+        padding-top: 25px;
+        display: inline-block;
+        line-height: 170px;
+        font-size: 170px;
+        padding-left: 20px;
+    }
+    &__button {
+        margin-right: 0px;
+    }
+}
+.join {
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./../img/join-bg.jpg) center no-repeat, gray;
+    background-size: cover;
+
+    &__title {
+        font-size: 65px;
+        line-height: 60px;
+        
+        span {
+            display: inline-block;
+            font-size: 106px;
+            padding-top: 20px;
+            padding-bottom: 35px;
+            vertical-align: sub;
+        }
+    }
+    &__underline {
+        width: 450px;
+        height: 15px;
+        background: url(./../img/underline.png) center no-repeat;
+        background-size: cover;
+        margin-right: 0px;
+        margin-left: auto;
+    }
+}
+.video-block {
+    height: 1100px;
+    background: url(./../img/video-bg.png) center no-repeat;
+    background-size: cover;
+    padding-bottom: 90px;
+
+    &__title {
+        font-size: 32px;
+        padding-top: 60px;
+        transform: translateX(-25px);
+
+        &--second {
+            color: $red;
+            font-size: 50px;
+            padding-top: 10px;
+            transform: translateX(25px) rotate(3deg);
+            padding-bottom: 60px;
+        }
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__titles {
+        padding-bottom: 60px;
+
+        &--first {
+            color: $yellow;
+            font-size: 58px;
+        }
+        &--second {
+            line-height: 40px;
+        }
+        &--third {
+            color: $red;
+        }
+        span {
+            font-size: 60px;
+        }
+    }
+}
+.vacancy-filter {
+    background-color: $red;
+    color: white;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    
+    &__container {
+        height: 290px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: inherit;
+        padding-bottom: 30px;
+    }
+    .filter {
+        &__list {
+            background-color: $red;
+
+        }
+    }
+}
+.vacancy-about {
+    &__title {
+        padding-top: 70px;
+        padding-bottom: 20px;
+        color: $dark-gray;
+        font-size: 40px;
+
+        span {
+            color: $red;
+        }
+    }
+    &__text {
+        width: 60%;
+        padding-bottom: 40px;
+    }
+    &__price {
+        text-transform: none;
+        color: $yellow;
+        font-size: 30px;
+        padding-bottom: 70px;
+
+        span {
+            color: $dark-gray;
+            font-family: Raleway;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    }
+    &__button {
+        background-color: $red;
+        margin-left: 0;
+        margin-bottom: 90px;
+
+        &:hover {
+            background-color: $dark-red;
+        }
+    }
+    &__more {
+        display: flex;
+        justify-content: space-between;
+        
+        .more {
+            &__block {
+                width: 39%;
+            }
+            &__title {
+                color: $dark-blue;
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+            &__list {
+                padding-left: 30px;
+            }
+            &__item {
+                padding-bottom: 15px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 6px;
+                    left: -30px;
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+                    background-color: $red;
+                    }
+            }
+        }
+    }
+}
+.learn-more {
+    background-color: $yellow;
+
+    &__container {
+        height: 310px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-size: 44px;
+    }
+    &__button {
+        background-color: $red;
+        margin-right: 0;
+
+        &:hover {
+            background-color: $dark-red;
+        }
+    }
+}
+
+
+
+.referral-send {
+    margin-top: 50px;
+
+    .send {
+        &__button {
+            background-color: white;
+            color: $dark-gray;
+
+            &:hover {
+                background-color: $gray;
+            }
+        }
+    }
+}
+.referral-slider {
+    height: 505px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(./../img/referral-slider.jpg) center no-repeat, gray;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: white;
+        font-size: 72px;
+        letter-spacing: 1px;
+
+        &--small {
+            display: none;
+        }
+    }
+}
+.referral-info {
+    &__container {
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__block {
+        width: 40%;
+    }
+    &__title {
+        color: $red;
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    &__text {
+        padding-bottom: 30px;
+    }
+    &__condition {
+        background: url(./../img/referral-info.png) center no-repeat;
+        background-size: cover;
+        width: 48%;
+        box-sizing: border-box;
+        padding: 35px 60px;
+        font-family: KZBlockPro;
+        text-transform: uppercase;
+        color: white;
+        & p {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .condition {
+            &__block {
+                padding-bottom: 10px;
+            }
+            &__text {
+                span {
+                    color: $yellow;
+                    span {
+                        font-size: 48px;
+                    }
+                }
+                &--first {
+                    color: $yellow;
+                }
+                &--second {
+                    text-transform: none;
+                }
+            }
+        }
+    }
+}
+.referral-advantages {
+    background: url(./../img/yellow-bg-romb.jpg) center no-repeat;
+    background-size: cover!important;
+    overflow: hidden;
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 760px;
+    }
+    &__image {
+        position: absolute;
+        object-fit: contain;
+        &--6 {
+            display: block;
+            top: -30px; 
+            left: -150px;  
+            height: 100%;
+        }
+        &--7 {
+            display: none
+        }
+        &--8 {
+            display: none;
+        }
+    }
+    &__block {
+        width: 48%;
+    }
+    &__title {
+        padding-top: 40px;
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    &__item {
+        margin-bottom: 65px;
+        line-height: 29px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 65px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 15%;
+            left: 5px;
+            width: 49px;
+            height: 41px;
+            background: url(./../img/mark-white.png) center no-repeat;
+            background-size: contain!important;
+        }
+    }
+}
+.referral-reasons {
+    background-color: $light-gray;
+    &__title {
+        width: 360px;
+        margin: 0 auto;
+        padding-top: 110px;
+        padding-bottom: 120px;
+        font-size: 36px;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 180px;
+    }
+    &__block {
+        width: 42%;
+        
+        .reasons {
+            &__title {
+                color: $red;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+.referral-gifts {
+    background: url(./../img/referral-gifts.png) center no-repeat;
+    background-size: contain;
+
+    &__container {
+        height: 630px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__block {
+        width: 50%;
+        padding-top: 150px;
+
+        &--small {
+            display: none;
+        }
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 41px;
+        color: $dark-gray;
+    }
+    span {
+        color: $red;
+    }
+    &__text {
+        padding-top: 20px;
+        width: 95%;
+    }
+}
+
+.benefits-slider {
+    height: 505px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(./../img/benefits-slider.jpg) 0% 30% no-repeat, gray;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: white;
+        font-size: 150px;
+        letter-spacing: 2px;
+    }
+}
+.benefits-about {
+    background: url(./../img/benefits-about.png) left no-repeat;
+    height: 530px;
+    background-position-y: 80%;
+
+    &__title {
+        color: black;
+        font-size: 30px;
+        padding-top: 75px;
+        padding-bottom: 10px;
+    }
+    &__text {
+        padding-top: 20px;
+        width: 80%;
+        line-height: 29px;
+        padding-bottom: 10px;
+        font-size: 15px;
+
+        &--first {
+            width: 78%;
+            font-size: 16px;
+        }
+    }
+}
+.benefits-advantages {
+    background: url(./../img/benefits-advantages.png) center no-repeat, #f4f4f4;
+    background-size: contain; 
+    height: 700px;
+
+    &__title {
+        font-size: 30px;
+        color: black;
+        padding-top: 85px;
+        padding-bottom: 65px;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 30%;
+        margin-bottom: 80px;
+        &:nth-child(1) {
+            p {
+                margin: auto;
+                width: 70%
+            }
+        }
+    }
+    &__text {
+        color: $dark-red;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__image {
+        margin: 35px auto;
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.benefits-slogan {
+    background: url(./../img/benefits-slogan.jpg) center 45% no-repeat;
+    background-size: cover; 
+    height: 670px;
+
+    &__title {
+        font-size: 36px;
+        padding-top: 100px;
+        padding-bottom: 110px;
+        color: $dark-gray;
+
+        &--first {
+            font-size: 64px;
+            color: $brown;
+        }
+        &--second {
+            font-size: 46px;
+
+            color: $orange;
+        }
+        &--third {
+            font-size: 84px;
+            letter-spacing: 2px;
+            color: $yellow;
+        }
+    }
+}
+.benefits-info {
+    background: url(./../img/benefits-info.png) center 70%  no-repeat;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    &__block {
+        width: 48%;
+        padding-bottom: 20px;
+
+        &:nth-child(2n) {
+            width: 40%;
+        }
+        &:nth-child(4n) {
+            width: 45%;
+
+            .benefits-info__title {
+                padding-left: 12%;
+            }
+        }
+    }
+    &__title {
+        font-size: 30px;
+        text-align: left;
+        padding-bottom: 25px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 29px;
+        padding-bottom: 30px;
+    }
+    &__list {
+        background-color: #fffae9;
+        padding: 50px 60px;
+        padding-right: 80px;
+    }
+    &__item {
+        font-size: 14px;
+        padding-bottom: 20px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: -30px;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: $yellow;
+        }
+    }
+    &__button {
+        margin-left: 0px;
+        background-color: $red;
+
+        &:hover {
+            background-color: $dark-red;
+        }
+    }
+}
+
+
+
+
+
+.university-slider {
+    height: 505px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(./../img/university-slider.jpg) 0% 64% no-repeat, gray;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: white;
+        font-size: 80px;
+        letter-spacing: 1px;
+    }
+}
+.university-send {
+    height: 930px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./../img/yellow-bg.jpg) center no-repeat, $yellow;
+    background-size: cover;   
+    overflow: hidden; 
+    margin-bottom: -100px;
+        padding-bottom: 100px;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &__image {
+        position: absolute;
+        object-fit: contain;
+        &--9 {
+            top: 0px; 
+            right: -150px; 
+            // width: 350px; 
+            // height: 350px;
+        }
+        &--10 {
+            top: 280px; 
+            right: -240px; 
+            // width: 350px; 
+            // height: 350px;
+            z-index: 2;
+        }
+        &--11 {
+            top: 600px; 
+            right: -190px; 
+            // width: 350px; 
+            // height: 350px;;
+        }
+        &--12 {
+            top: 50px; 
+            left: -250px; 
+            // width: 400px; 
+            // height: 400px;
+            
+        }
+        &--13 {
+            top: 370px; 
+            left: -270px; 
+            // width: 350px; 
+            // height: 350px;
+        }
+    }
+    .send {
+        &__container {
+            flex-direction: column;
+            padding: 0;
+        }
+        &__button {
+            color: $dark-gray;
+            background-color: white;
+            margin-right: auto;
+
+            &:hover {
+                background-color: $gray;
+            }
+        }
+        &__text {
+            &__third {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+.university-about {
+    height: 960px;
+    background:url(./../img/university-about.png) 40% no-repeat;
+
+    &__top {
+        padding-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 100px;
+        &--small {
+            display: none;
+        }
+    }
+    &__text {
+        width: 50%;
+    }
+    &__title {
+        padding-top: 20px;
+        color: $red;
+        font-size: 60px;
+        padding-bottom: 15px;
+    }
+    &__info {
+        font-size: 20px;
+        line-height: 30px;
+        color: $dark-gray;
+        font-weight: bold;
+    }
+    &__logo {
+        background:url(./../img/university-logo.png) center no-repeat;
+        background-size: contain;
+        width: 50%;
+        height: 200px; 
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+}
+.university-mission {
+    height: 850px;
+    background:url(./../img/university-mission.png) 30% bottom no-repeat, #e8e8e8;
+
+    &__title {
+        font-size: 36px;
+        padding-top: 100px;
+    }
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__small-container {
+        padding-top: 180px;
+        max-width: 440px;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 24px;
+        padding-bottom: 24px;
+        color: gray;
+
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: -60px;
+            width: 49px;
+            height: 41px;
+            background: url(./../img/mark.png) center no-repeat;
+            background-size: cover;
+        }
+    }
+}
+@media (max-width: $wrap){ 
+    .university-mission {
+        background:url(./../img/university-mission.png)  90% bottom no-repeat, #e8e8e8;
+    }
+}
+.testimonials {
+    background-color: #e8e8e8;
+    height: 775px;
+    
+
+    &__title {
+        padding-top: 90px;
+        font-size: 46px;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 90px 0 90px;
+    }
+    &__button {
+        background-color: #f87e00;
+        width: 315px;
+        height: 70px;
+        font-size: 30px;
+        &:hover {
+            background-color: $orange;
+        }
+    }
+}
+
+
+.faq {
+    &__title {
+        padding-top: 90px;
+        padding-bottom: 15px;
+        font-size: 48px;
+        color: black; 
+    }
+    &__text {
+        color: gray;
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 100px;
+        line-height: 29px;
+    }
+    &__container {
+        padding-bottom: 65px;
+    }
+}
+.faq-send {
+    .send {
+        &__button {
+            background-color: $red;
+
+            &:hover {
+                background-color: $dark-red;
+            }
+        }
+    }
+}
+
+.map {
+    height: 500px;
+    background: url(./../img/map.jpg) center no-repeat, gray;
+    background-size: cover;
+    position: relative;
+    &--small {
+        background-size: 150%;
+        height: 250px;
+        display: none;
+    }
+    &__marker {
+        display: none;
+        position: absolute;
+        width: 60px;
+        height: 70px;
+        background: url(./../img/map-marker.png) center no-repeat;
+        background-size: contain;
+        &::before {
+            content: '';
+            left: 21%;
+            top: 18%;
+            width: 58%;
+            height: 50%;
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+        }
+        &--small {
+            width: 30px;
+            height: 35px; 
+        }
+    }
+}
+.contacts-filter {
+    background-color: #004799;
+    color: white;
+
+    &__container {
+        height: 310px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }    
+    .filter {
+        &__list {
+            background-color: #004799;
+
+        }
+    }
+}
+.contacts-places {
+    &__title {
+        padding-top: 70px;
+        font-size: 40px;
+        color: $dark-gray;
+        padding-bottom: 35px;
+        
+        span {
+            color: $red;
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 90px;
+    }
+}
+.contacts-send {
+    .send {
+        &__button {
+            background-color: $red;
+
+            &:hover {
+                background-color: $dark-red;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: $tablet) {
+    .top-slider {
+        height: 540px;
+        background: url(./../img/top-slider-mob.jpg) top no-repeat, gray;
+        background-size: cover;
+        align-items: flex-end;
+        &__container {
+            background: url(./../img/referral-info.png) center no-repeat, $red;
+            background-size: cover;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+        &__block {
+            display: none;
+            &--small {
+                display: block;
+                width: 100%;
+                
+                h3 {
+                line-height: 60px;
+                text-align: center;
+                }
+            }
+            
+        }
+        &__text {
+                font-size: 43px;
+                color: white;
+        
+                &--small-text {
+                    text-transform: none;
+                    font-size: 43px;
+                    padding-bottom: 20px;
+                } 
+        }
+        
+        &__button {
+            margin: auto;
+            font-size: 26px;
+            width: 265px;
+            height: 55px;
+            line-height: 60px;
+            border-radius: 8px;
+        }
+    }
+    .main-send {
+        .send {
+            &__button {
+                background-color: $red;
+    
+                &:hover {
+                    background-color: $dark-red;
+                }
+            }
+        }
+    }
+    .career-block {
+        padding-top: 55px;
+        padding-bottom: 75px;
+    
+        &__title {
+            padding-bottom: 75px;
+            font-size: 30px;
+        }
+    }
+    .jobs {
+        padding-top: 90px;
+        height: initial;
+        background: url(./../img/jobs-bg.jpg) center no-repeat, $yellow;
+        background-size: cover;
+        color: white;
+        padding-bottom: 300px;
+
+        &__image {
+            position: absolute;
+            object-fit: contain;
+            &--1 {
+                top: -60px; 
+                right: 50px; 
+                width: 150px; 
+                height: 150px;
+            }
+            &--2 {
+                top: 10px; 
+                right: -40px; 
+                width: 150px; 
+                height: 150px;
+                z-index: 2;
+            }
+            &--3 {
+                top: 650px; 
+                right: -10px; 
+                width: 150px; 
+                height: 150px;;
+            }
+            &--4 {
+                top: 0px; 
+                left: -20px; 
+                width: 200px; 
+                height: 200px;
+                z-index: 2;
+            }
+            &--5 {
+                top: 680px; 
+                left: -20px; 
+                width: 200px; 
+                height: 200px;
+            }
+        }
+        &__title {
+            color: $brown;
+            font-size: 30px;
+            &--second {
+                padding-top: 235px;
+                font-size: 32px;
+                line-height: 30px;
+            }
+            &--third {
+                color: $red;
+                font-size: 39px;
+                transform: rotate(-2deg);
+                padding-bottom: 60px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 30px;
+                    left: 15%;
+                    width: 216px;
+                    height: 20px;
+                    background: url(./../img/underline.png) center no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+        &__paragraph {
+            display: block;
+            line-height: 30px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 410px;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+        &__button {
+            margin-top: 50px;
+            background-color: $red;
+            margin-bottom: 100px;
+    
+            &:hover {
+                background-color: $dark-red;
+            }
+            &--success {
+                color: $brown;
+                background-color: white;
+                
+                &:hover {
+                    background-color: $gray;
+                }
+            }
+        }
+    }
+    .join {
+        display: none;
+    }
+    .connect-block {
+        display: none;
+
+        &--second {
+            display: block;
+        }
+        &__container {
+            height: 380px;
+            flex-wrap: wrap;
+        }
+        &__text-block {
+            width: 100%;
+            max-width: 275px;
+            padding-top: 40px;
+            margin: 0 auto;
+        }
+        &__text {
+            font-size: 24px;
+            line-height: 40px;
+            .third{
+                display: inline;
+                font-size: 24px;
+                line-height: 40px;
+            }
+            .second {
+                display: inline;
+                font-size: 42px;
+            }
+            .first{
+                display: block;
+                font-size: 32px;
+            }
+        }
+        &__sign {
+            padding-top: 70px;
+            line-height: 160px;
+            font-size: 150px;
+            padding-left: 10px;
+        }
+        &__button {
+            margin: auto;
+            margin-bottom: 60px;
+        }
+    }
+    .video-block {
+        height: initial;
+        padding-bottom: 10px;
+    
+        &__title {
+            font-size: 30px;
+            padding-top: 90px;
+    
+            &--second {
+                font-size: 46px;
+                padding-bottom: 70px;
+            }
+        }
+        &__titles {
+            padding-bottom: 60px;
+            h2 {
+                text-align: left!important;
+            }
+            
+            &--first {
+                font-size: 26px;
+            }
+            &--second {
+                font-size: 29px;
+                line-height: 34px;
+            }
+            &--third {
+                font-size: 30px
+            }
+            span {
+                font-size: 52px;
+            }
+        }
+    }
+    .map {
+        display: none;
+    }
+    .vacancy-filter {
+        height: 640px;
+        display: flex;
+        align-items: flex-start;
+        
+        &__container {
+            height: 550px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+    }
+    .vacancy-about {
+        &__title {
+            padding-top: 40px;
+            padding-bottom: 15px;
+            font-size: 30px;
+    
+            span {
+                color: $red;
+            }
+        }
+        &__text {
+            width: 100%;
+            padding-bottom: 30px;
+            line-height: 24px;
+        }
+        &__price {
+            padding-bottom: 30px;
+            span {
+                padding-left: 10px;
+            }
+        }
+        &__button {
+            margin-left: auto;
+            margin-bottom: 40px;
+        }
+        &__more {
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0px;
+            
+            .more {
+                &__block {
+                    width: 100%;
+                }
+                &__title {
+                    padding-bottom: 10px; 
+                }
+                &__list {
+                    padding-top: 5px;
+                    padding-left: 15px;
+                    font-size: 14px;
+                    padding-bottom: 20px;
+                }
+                &__item {
+                    padding-bottom: 10px;
+                    line-height: 20px;
+                    &::before {
+                        top: 6px;
+                        left: -15px;
+                        width: 5px;
+                        height: 5px;
+                        }
+                }
+            }
+        }
+    }
+    .learn-more {
+        height: 330px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        &__container {
+            height: 250px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        &__title {
+            padding-top: 20px;
+            font-size: 36px;
+            line-height: 48px;
+            text-align: center
+        }
+        &__button {
+            background-color: $red;
+            margin-right: auto;
+        }
+    }
+    .referral-slider {
+        height: 225px;
+    
+        &__title {
+            display: none;
+
+            &--small {
+                font-size: 30px;
+                letter-spacing: 0px;
+                display: block;
+                color: white;
+            }
+        }
+    }
+    .referral-info {
+        &__container {
+            height: initial;
+            padding-bottom: 30px;
+        }
+        &__block {
+            width: 100%;
+        }
+        &__title {
+            font-size: 30px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        &__text {
+            padding-bottom: 30px;
+        }
+        &__condition {
+            width: 100%;
+            padding: 25px 35px 10px;
+            & p {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .condition {
+                &__block {
+                    padding-bottom: 10px;
+                }
+                &__text {
+                    span {
+                        span {
+                            font-size: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .referral-advantages {
+        background: url(./../img/yellow-bg-romb.jpg) center no-repeat;
+        background-size: cover!important;
+        
+        &__container {
+            align-items: flex-start;
+            height: 1215px;
+        }
+        &__image {
+            position: absolute;
+            object-fit: contain;
+            &--6 {
+                display: none;
+            }
+            &--7 {
+                display: block;
+                bottom: 230px; 
+                left: 0px;  
+            }
+            &--8 {
+                display: block;
+                bottom: 30px; 
+                left: 100px;  
+            }
+        }
+        &__block {
+            width: 100%;
+        }
+        &__title {
+            padding-top: 50px;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+        &__item {
+            margin-bottom: 35px;
+            padding-left: 50px;
+            &::before {
+                top: 15%;
+                left: 0px;
+                width: 40px;
+                height: 32px;
+            }
+        }
+    }
+    .referral-reasons {
+        &__title {
+            width: 100%;
+            text-align: start;
+            padding-top: 45px;
+            padding-bottom: 40px;
+            font-size: 30px;
+        }
+        &__container {
+            padding-bottom: 0px;
+        }
+        &__block {
+            width: 100%;
+            padding-bottom: 60px;
+            
+            .reasons {
+                &__title {
+                    padding-bottom: 15px;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .referral-gifts {
+        background: url(./../img/referral-gifts-mob.png) no-repeat;
+        background-size: contain;
+        background-position-y: 80%;
+    
+        &__container {
+            height: 730px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__block {
+            display: none;
+            
+            &--small {
+                display: block;
+                width: 100%;
+                padding-top: 100px;
+            }
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 30px;
+            color: $dark-gray;
+        }
+        span {
+            color: $red;
+        }
+        &__text {
+            padding-top: 40px;
+            width: 100%;
+        }
+    
+    }
+
+
+    .benefits-slider {
+        height: 225px;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(./../img/benefits-slider.jpg) 0% 30% no-repeat, gray;
+        background-size: cover;
+    
+        &__title {
+            font-size: 48px;
+            letter-spacing: 0px;
+        }
+    }
+    .benefits-about {
+        height: initial;
+        padding-bottom: 40px;
+    
+        &__title {
+            padding-top: 25px;
+            padding-bottom: 0px;
+        }
+        &__text {
+            width: 100%;
+            font-size: 14px;
+            line-height: 24px;
+    
+            &--first {
+                width: 100%;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+    .benefits-advantages {
+        background: url(./../img/benefits-advantages-mob.png) center no-repeat, #f4f4f4;
+        background-size: contain; 
+        height: initial;
+    
+        &__title {
+            padding-top: 85px;
+            padding-bottom: 25px;
+        }
+        &__block {
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+        &__item {
+            width: 90%;
+            margin-bottom: 40px;
+            &:nth-child(1) {
+                p {
+                    width: 80%
+                }
+            }
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__image {
+            margin: 15px auto;
+        }
+    }
+    .benefits-slogan {
+        background: url(./../img/benefits-slogan-mob.jpg) center 45% no-repeat;
+        background-size: cover; 
+        height: 430px;
+        &__container {
+            padding-left: 30px;
+        }
+        &__title {
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 25px;
+            color: $brown;
+    
+            &--first {
+                font-size: 30px;
+            }
+            &--second {
+                font-size: 24px;
+            }
+            &--third {
+                font-size: 40px;
+                letter-spacing: 0px;
+                color: $red;
+            }
+        }
+    }
+    .benefits-info {
+    
+        &__container {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        &__block {
+            width: 100%;
+            padding-bottom: 30px;
+    
+            &:nth-child(2n) {
+                width: 100%;
+            }
+            &:nth-child(3) {
+                padding-bottom: 10px;
+            }
+            &:nth-child(4) {
+                order: 5;
+            }
+        }
+        &__title {
+            padding-bottom: 5px;
+        }
+        &__text {
+            padding-bottom: 30px;
+        }
+        &__list {
+            margin-top: 15px;
+            padding: 30px 50px;
+        }
+        &__item {
+            padding-bottom: 20px;
+            &::before {
+                top: 3px;
+                left: -25px;
+            }
+        }
+        &__button {
+            margin-left: auto;
+            margin-bottom: 45px;
+        }
+    }
+    
+
+
+    .university-slider {
+        height: 225px;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(./../img/university-slider.jpg) 0% 70% no-repeat, gray;
+        background-size: cover;
+
+        &__title {
+            font-size: 36px;
+            letter-spacing: 0px;
+        }
+    }
+    .university-send {
+        height: 1020px;
+        background: url(./../img/yellow-bg.jpg) center no-repeat;
+        background-size: cover;
+        
+
+        &__image {
+            position: absolute;
+            object-fit: contain;
+            img {
+                width: 70%;
+                height: auto;
+            }
+            &--9 {
+                top: 60px; 
+                left:-100px; 
+                transform: rotate(-40deg);
+                // width: 150px; 
+                // height: 150px;
+                img {
+                    width: 40%;
+                    height: auto;
+                }
+            }
+            &--10 {
+                top: 140px; 
+                right: -240px; 
+                // width: 150px; 
+                // height: 150px;
+                z-index: 2;
+                img {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+            &--11 {
+                top: 80px; 
+                left: 50px; 
+                // width: 150px; 
+                // height: 150px;;
+                img {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+            &--12 {
+                top: 870px; 
+                left: 120px; 
+                height: 200px; 
+                z-index: 2;
+                 img {
+                    transform: rotate(20deg);
+                    width: 100%;
+                 }
+            }
+            &--13 {
+                top: 700px; 
+                left: 0px; 
+                // width: 200px; 
+                height: 200px;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .university-about {
+        height: initial;
+        background: white;
+    
+        &__top {
+            display: none;
+
+            &--small {
+                display: block;
+                padding-top: 20px;
+                padding-bottom: 50px;
+            }
+        }
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        &__title {
+            width: 65%;
+            text-align: start;
+            padding-top: 20px;
+            color: $red;
+            font-size: 40px;
+            padding-bottom: 15px;
+        }
+        &__info {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__logo {
+            width: 30%;
+            height: 70px; 
+        }
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
+    }
+    .university-mission {
+        height: 1000px;
+        background:url(./../img/university-mission-mob.png)bottom no-repeat, #e8e8e8;
+    
+        &__title {
+            padding-top: 50px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                left: 20%;
+                width: 216px;
+                height: 20px;
+                background: url(./../img/underline-yellow.png) center no-repeat;
+                background-size: contain;
+            }
+        }
+        &__small-container {
+            padding-top: 80px;
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 50px;
+        }
+        &__text {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: -60px;
+                width: 40px;
+                height: 32px;
+                background: url(./../img/mark.png) center no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    .testimonials {
+        height: initial;
+          >.container {
+            padding-bottom: 60px;
+         }
+        &__title {
+            margin: 0 auto;
+            padding-top: 70px;
+            font-size: 36px;
+            padding-bottom: 50px;
+        }
+        &__container {
+            padding: 0px 0px 40px;
+            justify-content: center;
+        }
+        &__button {
+            width: 270px;
+            height: 60px;
+            font-size: 26px;
+            line-height: 65px;
+            background-color: #f87e00;
+            &:hover {
+                background-color: $orange;
+            }
+        }
+    }
+
+    .faq {
+        &__title {
+            padding-top: 80px;
+            padding-bottom: 25px;
+            font-size: 30px;
+        }
+        &__text {
+            font-size: 16px;
+            padding: 0 30px 60px;
+            line-height: 29px;
+        }
+        &__container {
+            padding-bottom: 10px;
+        }
+    }
+
+
+    .contacts-filter {
+        height: 430px;
+        
+        display: flex;
+            align-items: center;
+
+        &__container {
+            height: 380px;
+            align-items: center;
+            padding-bottom: 10px;
+        }   
+    }
+    .contacts-places {
+        &__title {
+            padding-top: 30px;
+            font-size: 30px;
+            padding-bottom: 5px;
+        }
+        &__container {
+            justify-content: center;
+           
+            padding: 20px 0 0;
+        }
+    }
+    
+}
+@media (max-width: $mobileXs){ 
+.university-mission {
+    height: 1170px;
+}
+.referral-info {
+    &__condition {
+        width: 100%;
+        padding: 25px 35px 10px;
+        & p {
+            font-size: 15px;
+            line-height: 18px;
+        }
+        .condition {
+            &__block {
+                padding-bottom: 10px;
+            }
+            &__text {
+                span {
+                    span {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,16 @@
+mixin steps(position, image, name, text)
+    .steps__block
+        h2.steps__position= position
+        .steps__image(style="background-image: url(static/img/"+image+");")
+        h2.steps__name= name
+        p.steps__text= text
+
+.three-steps
+    .three-steps__container.container
+        h2.three-steps__title 3 Простых Шага
+        h2.three-steps__title-2 До Работы Твоей Мечты
+        .three-steps__steps
+            +steps('1', 'medical-history.png', 'Резюме Анкета', 'Choose from a selection of tastilicious toppings to create your own pizza')
+            +steps('2', 'customer-service.png', 'Телефонное Интервью', 'Choose from a selection of tastilicious toppings to create your own pizza')
+            +steps('3', 'meeting.png', 'Личная Встреча', 'Choose from a selection of tastilicious toppings to create your own pizza')
+        a(href="#").three-steps__button.base-button.send-resume-button Отправить Анкету 

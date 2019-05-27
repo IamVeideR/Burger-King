@@ -1,0 +1,72 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Benefits' 
+    - activePage = 'benefits'
+block content
+    .benefits-slider
+        h2.benefits-slider__title Benefits
+    .benefits-about 
+        .benefits-about__container.container
+            h3.benefits-about__title О Компании
+            p.benefits-about__text.benefits-about__text--first Благодаря талантливым сотрудникам и ответственному подходу к бизнесу BURGER KING® в Казахстане – одна из самых динамично развивающихся сетей ресторанов быстрого питания в стране.
+            p.benefits-about__text С момента выхода на рынок в конце мая 2012 г. BURGER KING® открыл 28 ресторанов. Компания продолжает реализацию амбициозных планов по завоеванию казахстанского рынка и в ближайшее время планирует открытие еще нескольких ресторанов и фуд-кортов в Казахстане. Строительство ресторанов BURGER KING® осуществляется строго с соблюдением высочайших международных стандартов качества и безопасности. Все рестораны оснащены передовым профессиональным кухонным оборудованием, специализированной вычислительной техникой и современным программным обеспечением, которые позволяют ускорить процесс обслуживания большого количества гостей одновременно.
+    .benefits-advantages
+        .benefits-advantages__container.container
+            h2.benefits-advantages__title Наши Преимущества
+            .benefits-advantages__block
+                .benefits-advantages__item
+                    .benefits-advantages__image(style="background-image: url(static/img/advantages-1.png);")
+                    p.benefits-advantages__text бесплатное питание в рабочее время 
+                .benefits-advantages__item
+                    .benefits-advantages__image(style="background-image: url(static/img/advantages-2.png);")
+                    p.benefits-advantages__text бесплатное обучение  
+                .benefits-advantages__item
+                    .benefits-advantages__image(style="background-image: url(static/img/advantages-3.png);")
+                    p.benefits-advantages__text корпоративная программа  поощрения лучших сотрудников
+                .benefits-advantages__item
+                    .benefits-advantages__image(style="background-image: url(static/img/advantages-4.png);")
+                    p.benefits-advantages__text Гибкие смены
+                .benefits-advantages__item
+                    .benefits-advantages__image(style="background-image: url(static/img/advantages-5.png);")
+                    p.benefits-advantages__text Отпуск
+                .benefits-advantages__item
+                    .benefits-advantages__image(style="background-image: url(static/img/advantages-6.png);")
+                    p.benefits-advantages__text Карьерный рост
+    .benefits-slogan 
+        .benefits-slogan__container.container
+            h3.benefits-slogan__title Наш Девиз
+            h3.benefits-slogan__title--first Лучшие люди  
+            h3.benefits-slogan__title--second совершают невозможное
+            h3.benefits-slogan__title--third каждый день!
+    .benefits-info
+        .benefits-info__container.container
+            .benefits-info__block
+                h2.benefits-info__title Наша цель
+                p.benefits-info__text Обеспечить преимущество первопроходца, создавая стремительно растущую сеть ресторанов в сегменте бургеров, путем открытия 50 ресторанов в течение 5 лет
+            .benefits-info__block
+                h2.benefits-info__title Наше видение
+                p.benefits-info__text Дарить людям улыбки путем предоставления высококачественной еды по доступной цене и гостеприимного обслуживания в комфортной и приятной обстановке
+            .benefits-info__block
+                h2.benefits-info__title Обучение
+                p.benefits-info__text Каждый сотрудник компании (офис / ресторан) проходит курс стажировки на базе ресторана, чтобы понять весь процесс производства.
+                p.benefits-info__text При переходе на новую ступень карьерной лестницы сотрудник проходит обучение и обязательную сертификацию. Обучение директора «с нуля» длится от 7 до 9 недель.
+                p.benefits-info__text В процессе обучения сотрудники проходят разнообразные тренинги и семинары, изучают особенности работы в сфере сервисного обслуживания и общественного питания, тонкости управления персоналом и работы в команде.
+            .benefits-info__block
+                h2.benefits-info__title Наши ценности
+                ul.benefits-info__list
+                    li.benefits-info__item Построение Компании с качественными людьми
+                    li.benefits-info__item Предоставление легендарного сервиса гостям
+                    li.benefits-info__item Приготовление самой желанной еды
+                    li.benefits-info__item Формирование у гостей приятного впечатления от посещения ресторанов
+                    li.benefits-info__item Достижение качественного роста
+                    li.benefits-info__item Построение высокопроизводительных команд
+            .benefits-info__button.base-button Подробнее
+    .send(style="background-color:#71ba00;")
+        .send__container.container
+            .send__text
+                h3.send__text__first Готов С Нами #[span Работать?]
+                h3.send__text__second Вперед!
+                h3.send__text__third НАПИШИ #[span нам]
+            a(href="#").send__button.base-button.learn-more-button Узнать Больше   
+    

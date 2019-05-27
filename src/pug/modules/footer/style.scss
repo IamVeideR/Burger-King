@@ -1,0 +1,168 @@
+.footer {
+    background: url(./../img/footer-bg.jpg) center no-repeat;
+    background-size: cover; 
+    color: white;
+    font-size: 14px;
+    &__top-side {
+        a:hover {
+            color: $yellow;
+        }
+        .top-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 270px;
+            padding-bottom: 20px;
+            box-sizing: border-box;
+        }
+    }
+    &__bottom-side {
+        background-color: #2f2320;
+        
+        .bottom-side {
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__logo {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: url(./../img/logo.png) center no-repeat;
+        background-size: cover;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 40px;
+    }
+    &__menu {
+        padding-left: 60px;
+
+        .menu {
+            &__item {
+                padding: 15px;
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        justify-content: flex-end;
+
+        .contacts {
+            &__icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $red;
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+                cursor: pointer;
+                transform: scale(-1, 1);
+                
+
+                &:hover {
+                    background-color: $dark-red;
+                }
+            }
+            &__phone {
+                line-height: 24px;
+                letter-spacing: 1px;
+            }
+            &__socials {
+                display: flex;
+                justify-content: space-between;
+            }
+            &__social {
+                padding-top: 30px;
+                font-size: 16px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .footer {
+        background: $brown;
+        
+    
+        &__top-side {
+            .top-side {
+                font-size: 20px;
+                display: flex;
+                margin-right: 20px;
+                justify-content: center;
+                align-items: center;
+                height: 290px;
+                padding-top: 30px;
+                box-sizing: border-box;
+            }
+        }
+        &__bottom-side {
+            
+            .bottom-side {
+                font-size: 14px;
+                height: 75px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        &__logo {
+            display: none;
+        }
+        &__list {
+            display: none;
+        }
+        &__contacts {
+            display: flex;
+            justify-content: flex-start;
+            width: 80%;
+    
+            .contacts {
+                &__icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: $red;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px;
+    
+                    &:hover {
+                        background-color: $dark-red;
+                    }
+                }
+                &__phone {
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 1px;
+                }
+                &__socials {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__social {
+                    padding-top: 40px;
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $mobileXs) {
+    .footer__contacts {
+        padding-right: 5%;
+    }
+ }

@@ -1,0 +1,59 @@
+.testimonial {
+    width: 32%;
+    background-color: white;
+    padding: 30px 45px;
+    height: 280px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    box-sizing: border-box;
+
+    &__brackets {
+        background: url(./../img/brackets.png) center no-repeat;
+        background-size: cover;
+        width: 32px;
+        height: 27px;
+        margin: 0px auto 25px;
+    }
+    &__text {
+        color: black;
+        font-size: 14px;
+        text-align: center;
+        height: 80px;
+    }
+    &__author {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__name {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &__job {
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    &__image {
+        margin-right: 8px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-position: center;
+    }
+}
+
+@media (max-width: $tablet) {
+    .testimonial {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 30px 35px;
+        height: initial;
+        &__text {
+            padding-bottom: 30px;
+            height: initial;
+        }
+    }
+    
+}
