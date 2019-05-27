@@ -1,0 +1,93 @@
+.question {
+    margin: 10px 25px 10px 15px;
+    padding: 30px 45px;
+    border-bottom: 2px solid $gray;
+    cursor: pointer;
+
+    p::selection {
+        background: transparent;
+    }
+    &__question {
+        font-size: 20px;
+        position: relative;
+        color: $dark-gray;
+        font-weight: bold; 
+        &::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -45px;
+            width: 21px;
+            height: 18px;
+            background: url(./../img/question-question.png) center no-repeat;
+            background-size: cover;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            right: -45px;
+            width: 21px;
+            height: 18px;
+            background: url(./../img/question-arrow.png) center no-repeat;
+            background-size: cover;
+        }
+        &--opened {
+            &::after {
+                transition-duration: 0.2s;
+                transform: rotate(180deg);
+            }
+        }
+        &--closed {
+            &::after {
+                transition-duration: 0.2s;
+                transform: rotate(0deg);
+            }
+        }
+    }
+    &__answer {
+        display: none;
+        font-size: 16px;
+        color: gray;
+        position: relative;
+        margin-top: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -45px;
+            width: 21px;
+            height: 18px;
+            background: url(./../img/question-answer.png) center no-repeat;
+            background-size: cover;
+        }
+    }
+    &__text {
+        padding-bottom: 30px;
+    }
+    &:last-child {
+        border: none;
+    }
+}
+
+@media (max-width: $tablet) {
+    .question {
+        padding: 30px 25px;
+        &__question {
+            font-size: 14px;
+            &::before {
+                left: -35px;
+            }
+        }
+        &__answer {
+            font-size: 14px;
+            width: 120%;
+            &::before {
+                left: -35px;
+            }
+        }
+        &__text {
+            padding-bottom: 30px;
+        }
+}
+}

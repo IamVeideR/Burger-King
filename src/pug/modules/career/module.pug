@@ -1,0 +1,23 @@
+.career
+    .career__titles-block
+        .career__left-arrow
+        h2.career__main-title= career[0].title
+        .career__right-arrow
+        .career__titles
+            each tab, i in career
+                .career__title-section
+                    .career__label
+                        h3.career__title(class= tab.first ? "career__title--first": "")= tab.title
+                    .career__diagram
+                        .career__line(class= tab.first ? "career__line--first": "",class= tab.last ? "career__line--last": "",)
+                        .career__round(class= tab.first ? "career__round--first": "")
+                        .career__small-round(class= tab.first ? "career__small-round--first": "")
+    .career__section-block(id='career-section')
+        each tab in career
+            .career__section(data-tab-value= tab.title, id=tab.title, class= tab.first ? "career__section--first": "",)
+                p.career__paragraph= tab.paragraphs 
+                .career__info
+                    p Заработная Плата
+                    h3.career__salary= tab.salary
+                    p Сроки Работы Около
+                    h3.career__time= tab.time

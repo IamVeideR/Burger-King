@@ -1,0 +1,163 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Burger King' 
+    - activePage = 'main'
+block content
+    .top-slider
+        .top-slider__container.container
+            .top-slider__block
+                h3.top-slider__text Хочу
+                h3.top-slider__text--middle-text Работать
+                h3.top-slider__text--small-text в BURGER KING!
+                a(href="vacancy.html").top-slider__button.base-button Найти Вакансию
+            .top-slider__block--small
+                h3.top-slider__text Хочу Работать
+                h3.top-slider__text--small-text в BURGER KING!
+                a(href="vacancy.html").top-slider__button.base-button Найти Вакансию
+    include ../modules/three-steps/module
+    .main-send
+        - 
+            var send = {
+                background: '#ee7700',
+            }
+        include ../modules/send/module
+    .career-block
+        .career-block__container.container
+            h2.career-block__title Твой Карьерный Рост
+            -
+                var career = [
+                    {
+                        title: 'Повар| Кассир',
+                        paragraphs: 'Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей',
+                        salary: '150 000 т',
+                        time: '6 месяцев',
+                        first: true
+                    },
+                    {
+                        title: 'Координатор',
+                       paragraphs: 'Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей',
+                        salary: '150 000 т',
+                        time: '7 месяцев'
+                    },
+                    {
+                        title: 'Старший Координатор',
+                        paragraphs: 'Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей',
+                        salary: '150 000 т',
+                        time: '8 месяцев'
+                    },
+                    {
+                        title: 'Заместитель Директора',
+                        paragraphs: 'Следующий твой шаг — ты можешь стать менеджером смены! для наших гостей',
+                        salary: '150 000 т',
+                        time: '9 месяцев'
+                    },
+                    {
+                        title: 'Директор',
+                        paragraphs: 'Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей',
+                        salary: '150 000 т',
+                        time: '10 месяцев'
+                    },
+                    {
+                        title: 'Территориальный Упраляющий',
+                        paragraphs: 'Следующий твой шаг — ты можешь стать менеджером смены! В твоих руках будет обеспечение бесперебойной работы ресторана, распределение заданий между сотрудниками, контроль за соблюдением процедур приготовления и хранения продуктов и, конечно, поддержание неповторимой атмосферы для наших гостей',
+                        salary: '150 000 т',
+                        time: '11 месяцев',
+                        last: true
+                    }
+                ];
+            include ../modules/career/module
+            a(href="#").career-block__button.base-button.learn-more-button Узнать Больше
+    .jobs
+        h2.jobs__title Актуальные Вакансии
+        -
+            var vacancy = [
+                {
+                    title: 'Повар',
+                    paragraphs: 'Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную атмосферу в коллективе,  предлагаем нашим людям справедливую оплату труда, безопасные условия работы,  привлекательный социальный пакет, а главное способствуем личностному и профессиональному развитию сотрудников.',
+                    first: true
+                },
+                {
+                    title: 'Кассир',
+                    paragraphs: 'Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную атмосферу в коллективе,  предлагаем нашим людям справедливую оплату труда, безопасные условия работы,  привлекательный социальный пакет, а главное способствуем личностному и профессиональному развитию сотрудников.'
+                },
+                {
+                    title: 'Курьер',
+                    paragraphs: 'Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную атмосферу в коллективе,  предлагаем нашим людям справедливую оплату труда, безопасные условия работы,  привлекательный социальный пакет, а главное способствуем личностному и профессиональному развитию сотрудников.'
+                },
+                {
+                    title: 'Менеджер',
+                    paragraphs: 'Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную ',
+                    last: true
+                }
+            ];
+        include ../modules/vacancy/module
+        a(href='vacancy.html').jobs__button.base-button Все Вакансии  
+        .container 
+            .jobs__image.jobs__image--1
+                img(src='static/img/human-picture-1.png')
+            .jobs__image.jobs__image--2
+                img(src='static/img/human-picture-2.png')
+            .jobs__image.jobs__image--3
+                img(src='static/img/human-picture-4.png')
+            .jobs__image.jobs__image--4
+                img(src='static/img/human-picture-5.png')
+            .jobs__image.jobs__image--5
+                img(src='static/img/human-picture-3.png')
+            h2.jobs__title.jobs__title--second Узнай Историю
+            h2.jobs__title--third Нашего Успеха
+            p.jobs__paragraph Наш приоритет – создавать максимум возможностей для команды. Поэтому мы создаем благоприятную атмосферу в коллективе,  предлагаем нашим людям
+            a(href='#').jobs__button--success.base-button.learn-more-button Узнать Больше 
+    .join
+        .join__text-block
+            h3.join__title Присоединяйся 
+            h3.join__title К Нашей #[span Команде!]
+            .join__underline
+    .connect-block
+        .connect-block__container.container
+            .connect-block__text-block
+                h3.connect-block__text вы можете связаться с нами #[.first и узнать подробнее <br>] о работе в #[.second Burger King]
+                h3.connect-block__sign !
+            a(href="#").connect-block__button.base-button.learn-more-button Узнать Больше
+    .video-block
+        h2.video-block__title Откройте Для Себя
+        h2.video-block__title--second Burger King
+        .video-block__container.container
+            -
+                var video = {
+                    title: 'Гибкость',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                    src: '#',
+                    image: 'video-poster-1.jpg'
+                }
+            include ../modules/video-section/module
+            -
+                var video = {
+                    title: 'Веселое Место Работы',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                    src: '#',
+                    image: 'video-poster-2.jpg'
+                }
+            include ../modules/video-section/module
+            -
+                var video = {
+                    title: 'Веселое Место Работы',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                    src: '#',
+                    image: 'video-poster-2.jpg'
+                }
+            include ../modules/video-section/module
+            -
+                var video = {
+                    title: 'Гибкость',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                    src: '#',
+                    image: 'video-poster-1.jpg'
+                }
+            include ../modules/video-section/module
+    .connect-block.connect-block--second
+        .connect-block__container.container
+            .connect-block__text-block
+                h3.connect-block__text вы можете связаться #[.first с нами и узнать<br>] #[.third подробнее о работе в] #[.second Burger King]
+                h3.connect-block__sign !
+            a(href="#").connect-block__button.base-button.learn-more-button Узнать Больше

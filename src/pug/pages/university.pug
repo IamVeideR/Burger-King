@@ -1,0 +1,108 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Университет BKU' 
+    - activePage = 'university'
+block content
+    .university-slider
+        h2.university-slider__title Университет
+        h2.university-slider__title Burger King
+    .university-about 
+        .university-about__container.container
+            .university-about__top
+                .university-about__text
+                    h3.university-about__title BKU - Это
+                    p.university-about__info Внутренний корпоративный Университет,  который нацелен на: 
+                .university-about__logo
+            .university-about__top--small
+                .university-about__text
+                    .university-about__logo
+                    h3.university-about__title BKU - Это 
+                p.university-about__info Внутренний корпоративный Университет,  который нацелен на:
+            .university-about__list
+                - 
+                    var description = {
+                        title: 'Исследование',
+                        image: 'description-1.png',
+                        text: 'регулярное выявление потребностей в обучении операционного отдела путем опроса Директоров ресторанов'
+                    }
+                include ../modules/description/module
+                - 
+                    var description = {
+                        title: 'Тренинговые Модули',
+                        image: 'description-2.png',
+                        text: 'создание соответствующих тренинговых модулей, инструкций, памяток руководителями или специалистами отделов ЦО'
+                    }
+                include ../modules/description/module
+                - 
+                    var description = {
+                        title: 'Обучение',
+                        image: 'description-3.png',
+                        text: 'обучение руководителей и специалистов ЦО внешним бизнес-тренером созданию модулей, навыкам ведения тренингов, интерактивности взаимодействия с аудиторией'
+                    }
+                include ../modules/description/module
+                - 
+                    var description = {
+                        title: 'Улучшение Навыков',
+                        image: 'description-4.png',
+                        text: 'проведение ежегодных тренинговых сессий для Директоров ресторанов для улучшениях их навыков для еще более эффективного управления ресторанами и оптимизации рабочих процедур'
+                    }
+                include ../modules/description/module
+    .university-mission
+        h2.university-mission__title Наша Цель
+        .university-mission__container.container 
+            .university-mission__small-container
+                p.university-mission__text Создать конкурентное преимущество компании перед остальными игроками фастфуд рынка, путем внедрения и поддержания программы BK Университет, которая позволит разработать и запустить тренинговые модули для команд ресторанов в целях повышения навыков и знаний
+                p.university-mission__text Создать модули по соответствующим подразделениям для обучения менеджмента ресторанов согласно плану развития компании
+                p.university-mission__text Проводить ежегодно минимум 2 сессии для Директоров ресторанов, предварительно выявив потребность в обучении операционного отдела
+    .university-send 
+        .university-send__container.container
+            .university-send__image.university-send__image--9
+                img(src='static/img/human-picture-9.png')
+            .university-send__image.university-send__image--10
+                img(src='static/img/human-picture-10.png')
+            .university-send__image.university-send__image--11
+                img(src='static/img/human-picture-11.png')
+            .university-send__image.university-send__image--12
+                img(src='static/img/human-picture-12.png')
+            .university-send__image.university-send__image--13
+                img(src='static/img/human-picture-13.png')
+            - 
+                var send = {
+                    background: 'transparent',
+                }
+            include ../modules/send/module 
+    .testimonials 
+        .container
+            h2.testimonials__title История Нашего Успеха
+            .testimonials__container.container
+                - 
+                    var testimonial = {
+                        text: 'я искренне полюбила свою работу и свой коллектив',
+                        image: 'sara-quote.jpg',
+                        name: 'Абильгазиева Сара',
+                        job: 'Координатор'
+                    }
+                include ../modules/testimonial/module
+                - 
+                    var testimonial = {
+                        text: 'Благодаря стараниям, умениям, хорошим продажам на кассе, в течении года',
+                        image: 'sasha-quote.jpg',
+                        name: 'Николоаев Саша',
+                        job: 'Кассир'
+                    }
+                include ../modules/testimonial/module
+                - 
+                    var testimonial = {
+                        text: 'Я обучал сотрудников всем деталям  работы на кухне  и за кассой',
+                        image: 'kostya-quote.jpg',
+                        name: 'Константин Киселев',
+                        job: 'Директор ресторана'
+                    }
+                include ../modules/testimonial/module
+            a(href='#').testimonials__button.base-button Подробнее
+    - 
+            var send = {
+                background: '#5da931',
+            }
+    include ../modules/send/module  

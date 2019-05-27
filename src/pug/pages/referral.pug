@@ -1,0 +1,103 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Friend Referral' 
+    - activePage = 'referral'
+block content
+    .referral-slider
+        .container
+            h2.referral-slider__title Приведи На Работу Друга <br> И получи Вознаграждение!!!
+            h2.referral-slider__title--small Приведи На Работу Друга И получи Вознаграждение!!!
+    .referral-info
+        .referral-info__container.container
+            .referral-info__block
+                h3.referral-info__title Суть Программы
+                p.referral-info__text Каждый работник, который привлечет к работе в Ресторан нового сотрудника (своего знакомого товарища, друга) станет обладателем денежного вознаграждения!
+            .referral-info__condition
+                .condition__block
+                    p.condition__text--first Через 1 месяц успешной работы
+                    p.condition__text вашего друга в компании
+                .condition__block
+                    p.condition__text #[span Вы получите #[span 40]% ](7 700 тенге)
+                    p.condition__text--second от общей суммы вознаграждения, а
+                .condition__block
+                    p.condition__text #[span оставшиеся #[span 60]% ](11 550 тенге)-
+                    p.condition__text--second еще через 3 месяца*.
+    .referral-advantages
+        .referral-advantages__container.container
+            .referral-advantages__image.referral-advantages__image--6
+                img(src='static/img/human-picture-6.png')
+            .referral-advantages__image.referral-advantages__image--7
+                img(src='static/img/human-picture-7.png')
+            .referral-advantages__image.referral-advantages__image--8
+                img(src='static/img/human-picture-8.png')
+            .referral-advantages__block
+                h3.referral-advantages__title преимущества данной программы
+                ul.referral-advantages__list
+                    li.referral-advantages__item Уникальная возможность работать в команде со своим другом
+                    li.referral-advantages__item Опыт поиска и набора персонала
+                    li.referral-advantages__item Бесценный опыт “наставничества”/ “кураторcтва”, потому что Вы напрямую участвуете в адаптации нового сотрудника.
+                    li.referral-advantages__item Реальная возможность заработать
+    .referral-reasons
+        .container
+            h2.referral-reasons__title Причины стать частью нашей команды
+        .referral-reasons__container.container 
+            .referral-reasons__block
+                h3.reasons__title Стабильный карьерный рост
+                p.reasons__text Ни в одной другой сфере невозможно продвинуться по службе в сравнительно малые сроки. Стать директором ресторана за 12 месяцев — не мечта, а реальность! “Бургер Кинг”  это международный знаковый бренд, и в Компании придерживаются мировых стандартов и политик!  
+            .referral-reasons__block
+                h3.reasons__title мотивационная программа для всех сотрудников:
+                p.reasons__text Достигай целей и получай реальную возможность побеждать в ежемесячных номинациях, благодаря своему упорному труду: “Сотрудник месяца”, “Лучший продавец”, “  Гриль Мастер”, “Лучшая улыбка” — собирай медали и победи в номинации “Сотрудник года” и получи большую награду! 
+    .referral-gifts
+        .referral-gifts__container.container
+            .referral-gifts__block
+                h3.referral-gifts__title так же мы #[span дарим приятные подарки!]
+                h3.referral-gifts__title за упорный труд и достижения
+                h3.referral-gifts__title от каждого департамента:
+                p.referral-gifts__text Кубки, подушки, кружки, блокноты, калькуляторы, фонарики, запонки, флешки и другие приятные брендированные подарки! 
+            .referral-gifts__block--small
+                h3.referral-gifts__title так же мы #[span дарим приятные подарки!] за упорный труд и достижения от каждого департамента:
+                p.referral-gifts__text Кубки, подушки, кружки, блокноты, калькуляторы, фонарики, запонки, флешки и другие приятные брендированные подарки! 
+    .video-block__titles.container
+        h2.video-block__titles--first мы будем признательны,
+        h2.video-block__titles--second если приведешь друга, и подарим за это
+        h2.video-block__titles--third фирменную футболку #[span Burger king!]
+    .video-block__container.container
+            -
+                var video = {
+                    title: 'Гибкость',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                    src: '#',
+                    image: 'video-poster-1.jpg'
+                }
+            include ../modules/video-section/module
+            -
+                var video = {
+                    title: 'Веселое Место Работы',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                    src: '#',
+                    image: 'video-poster-2.jpg'
+                }
+            include ../modules/video-section/module
+            -
+                var video = {
+                    title: 'Веселое Место Работы',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                    src: '#',
+                    image: 'video-poster-2.jpg'
+                }
+            include ../modules/video-section/module
+            -
+                var video = {
+                    title: 'Гибкость',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                    src: '#',
+                    image: 'video-poster-1.jpg'
+                }
+            include ../modules/video-section/module
+    .referral-send
+        - 
+            var send = {
+                background: '#f7a800',
+            }
+        include ../modules/send/module

@@ -1,0 +1,7 @@
+.video-section
+    .video-section__container
+        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/dl16e_mG6hg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        //- video(controls  poster='static/img/'+video.image)
+            source(src= video.src type="video/mp4")
+    p.video-section__title= video.title
+    p.video-section__text= video.text

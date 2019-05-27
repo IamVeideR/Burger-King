@@ -1,0 +1,78 @@
+.contact {
+    width: 32%;
+    box-sizing: border-box;
+    padding: 35px 20px 30px 65px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    border: 1px solid #c2c2c2;
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 25px;
+
+    p {
+        color: gray;
+        position: relative;
+    }
+    i {
+        color: black;
+        position: absolute;
+        left: -32px;
+        top: 6px;
+    }
+
+    &:hover {
+        background-color: $red;
+
+         p,i {
+            color: white!important;
+         }
+    }
+    &__name {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black!important;
+    }
+    &__time {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+.show-all {
+    display: none;
+}
+@media (max-width: $tablet) {
+.contact {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 20px 30px 25%;
+    border-radius: 8px;
+    background-color: #fefefe;
+    border: 1px solid #c2c2c2;
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 25px;
+
+    i {
+        color: black;
+        position: absolute;
+        left: -32px;
+        top: 6px;
+    }
+    &__time {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+.show-all {
+    margin: 5px auto 25px;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    color: gray;
+    cursor: pointer;
+}
+}
