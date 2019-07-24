@@ -759,7 +759,6 @@
 
 
 
-
 .university-slider {
     height: 505px;
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(./../img/university-slider.jpg) 0% 64% no-repeat, gray;
@@ -775,96 +774,115 @@
         letter-spacing: 1px;
     }
 }
-.university-send {
-    height: 930px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.university-years {
+    height: 1445px;
     background: url(./../img/yellow-bg.jpg) center no-repeat, $yellow;
     background-size: cover;   
-    overflow: hidden; 
-    margin-bottom: -100px;
-        padding-bottom: 100px;
 
     &__container {
         height: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: hidden;
     }
     &__image {
         position: absolute;
         object-fit: contain;
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__text {
+        width: 25%;
+    }
+    &__images {
+        width: 60%;
+        position: relative;
+        height: 100%;
+    }
+    &__image {
+        background-size: contain!important;
+        position: absolute;
+        &--1 {
+            width: 300px;
+            height: 280px;
+            top: -100px;
+            left: 15px;
+        }
+        &--2 {
+            width: 300px;
+            height: 280px;
+            top: -90px;
+            left: 240px;
+        }
+        &--3 {
+            width: 260px;
+            height: 280px;
+            top: 60px;
+            left: 120px;
+        }
+        &--4 {
+            width: 250px;
+            height: 280px;
+            top: -50px;
+            left: -10px;
+        }
+        &--5 {
+            width: 290px;
+            height: 290px;
+            top: -70px;
+            left: 190px;
+        }
+        &--6 {
+            width: 300px;
+            height: 300px;
+            top: 120px;
+            left: 50px;
+        }
+        &--7 {
+            width: 280px;
+            height: 280px;
+            top: -180px;
+            left: 115px;
+        }
+        &--8 {
+            width: 450px;
+            height: 260px;
+            top: 20px;
+            left: 120px;
+        }
         &--9 {
-            top: 0px; 
-            right: -150px; 
-            // width: 350px; 
-            // height: 350px;
-        }
-        &--10 {
-            top: 280px; 
-            right: -240px; 
-            // width: 350px; 
-            // height: 350px;
-            z-index: 2;
-        }
-        &--11 {
-            top: 600px; 
-            right: -190px; 
-            // width: 350px; 
-            // height: 350px;;
-        }
-        &--12 {
-            top: 50px; 
-            left: -250px; 
-            // width: 400px; 
-            // height: 400px;
-            
-        }
-        &--13 {
-            top: 370px; 
-            left: -270px; 
-            // width: 350px; 
-            // height: 350px;
+            width: 300px;
+            height: 300px;
+            top: -170px;
+            left: 300px;
         }
     }
-    .send {
-        &__container {
-            flex-direction: column;
-            padding: 0;
-        }
-        &__button {
-            color: $dark-gray;
-            background-color: white;
-            margin-right: auto;
-
-            &:hover {
-                background-color: $gray;
-            }
-        }
-        &__text {
-            &__third {
-                margin: 0 auto;
-            }
-        }
+    &__title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    &__year {
+        font-size: 40px;
     }
 }
 .university-about {
-    height: 960px;
-    background:url(./../img/university-about.png) 40% no-repeat;
+    background:url(./../img/university-about.png) 300px 100px no-repeat;
 
     &__top {
         padding-top: 90px;
         display: flex;
         justify-content: space-between;
-        padding-bottom: 100px;
+        padding-bottom: 130px;
         &--small {
             display: none;
         }
     }
     &__text {
-        width: 50%;
+        width: 70%;
     }
     &__title {
         padding-top: 20px;
@@ -873,22 +891,26 @@
         padding-bottom: 15px;
     }
     &__info {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 24px;
         color: $dark-gray;
         font-weight: bold;
+        padding-bottom: 20px;
     }
     &__logo {
         background:url(./../img/university-logo.png) center no-repeat;
         background-size: contain;
-        width: 50%;
+        width: 30%;
         height: 200px; 
+    }
+    &__structure {
+        font-size: 36px;
     }
     &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding-top: 30px;
+        padding-top: 65px;
     }
 }
 .university-mission {
@@ -1704,75 +1726,13 @@
             letter-spacing: 0px;
         }
     }
-    .university-send {
-        height: 1020px;
-        background: url(./../img/yellow-bg.jpg) center no-repeat;
-        background-size: cover;
-        
-
-        &__image {
-            position: absolute;
-            object-fit: contain;
-            img {
-                width: 70%;
-                height: auto;
-            }
-            &--9 {
-                top: 60px; 
-                left:-100px; 
-                transform: rotate(-40deg);
-                // width: 150px; 
-                // height: 150px;
-                img {
-                    width: 40%;
-                    height: auto;
-                }
-            }
-            &--10 {
-                top: 140px; 
-                right: -240px; 
-                // width: 150px; 
-                // height: 150px;
-                z-index: 2;
-                img {
-                    width: 50%;
-                    height: auto;
-                }
-            }
-            &--11 {
-                top: 80px; 
-                left: 50px; 
-                // width: 150px; 
-                // height: 150px;;
-                img {
-                    width: 50%;
-                    height: auto;
-                }
-            }
-            &--12 {
-                top: 870px; 
-                left: 120px; 
-                height: 200px; 
-                z-index: 2;
-                 img {
-                    transform: rotate(20deg);
-                    width: 100%;
-                 }
-            }
-            &--13 {
-                top: 700px; 
-                left: 0px; 
-                // width: 200px; 
-                height: 200px;
-                img {
-                    width: 80%;
-                }
-            }
-        }
+    .university-years {
+        height: 1415px;        
     }
     .university-about {
         height: initial;
         background: white;
+        padding-bottom: 20px;
     
         &__top {
             display: none;
@@ -1780,7 +1740,7 @@
             &--small {
                 display: block;
                 padding-top: 20px;
-                padding-bottom: 50px;
+                padding-bottom: 30px;
             }
         }
         &__text {
@@ -1810,70 +1770,6 @@
             justify-content: space-between;
             flex-wrap: wrap;
             padding-top: 30px;
-        }
-    }
-    .university-mission {
-        height: 1000px;
-        background:url(./../img/university-mission-mob.png)bottom no-repeat, #e8e8e8;
-    
-        &__title {
-            padding-top: 50px;
-            position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: -20px;
-                left: 20%;
-                width: 216px;
-                height: 20px;
-                background: url(./../img/underline-yellow.png) center no-repeat;
-                background-size: contain;
-            }
-        }
-        &__small-container {
-            padding-top: 80px;
-            width: 100%;
-            box-sizing: border-box;
-            padding-left: 50px;
-        }
-        &__text {
-            position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                top: 2px;
-                left: -60px;
-                width: 40px;
-                height: 32px;
-                background: url(./../img/mark.png) center no-repeat;
-                background-size: cover;
-            }
-        }
-    }
-    .testimonials {
-        height: initial;
-          >.container {
-            padding-bottom: 60px;
-         }
-        &__title {
-            margin: 0 auto;
-            padding-top: 70px;
-            font-size: 36px;
-            padding-bottom: 50px;
-        }
-        &__container {
-            padding: 0px 0px 40px;
-            justify-content: center;
-        }
-        &__button {
-            width: 270px;
-            height: 60px;
-            font-size: 26px;
-            line-height: 65px;
-            background-color: #f87e00;
-            &:hover {
-                background-color: $orange;
-            }
         }
     }
 
@@ -1921,9 +1817,6 @@
     
 }
 @media (max-width: $mobileXs){ 
-.university-mission {
-    height: 1170px;
-}
 .referral-info {
     &__condition {
         width: 100%;

@@ -12,7 +12,7 @@ module.exports = function () {
             message: "Error: <%= error.message%>",
             title: "Error style "
         }))
-        .pipe ($.gp.csso())
+        // .pipe ($.gp.csso())
         .pipe($.gp.sourcemaps.write())
         .pipe($.gulp.dest('build/static/css/'))
         .pipe($.bs.reload({
