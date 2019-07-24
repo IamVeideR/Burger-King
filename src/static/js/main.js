@@ -429,6 +429,36 @@ let toggleFaq = () => {
   }
 }
 toggleFaq();
+let toggleCare = () => {
+  let history = document.getElementsByClassName('main__button');
+  let block = document.getElementsByClassName('care-block');
+  let dropdown = document.getElementsByClassName('care-block__main');
+
+  for(let i = 0;i<history.length;i++) {
+    history[i].onclick = () => {
+      if(block[i].classList.contains('care-block--opened')) {
+        block[i].classList.remove('care-block--opened');
+      } else {
+        block[i].classList.add('care-block--opened');
+      }
+    }
+  }
+  if(window.screen.width < 765) {
+    for(let i = 0;i<history.length;i++) {
+      let drop = document.getElementsByClassName('care-block')[i].getElementsByTagName('i')[0];
+      dropdown[i].onclick = () => {
+        if(block[i].classList.contains('care-block--opened')) {
+          block[i].classList.remove('care-block--opened');
+          drop.style.transform = 'rotate(0deg)';
+        } else {
+          block[i].classList.add('care-block--opened');
+          drop.style.transform = 'rotate(180deg)';
+        }
+      }
+    }
+  }
+}
+toggleCare();
 
 // Выпадание карты в мобильной версии
 let toggleMap = () => {
