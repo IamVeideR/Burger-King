@@ -1,0 +1,134 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Office' 
+    - activePage = 'office'
+block content
+    .office-slider
+        h2.office-slider__title office
+    .office-strategy
+        .office-strategy__container.container
+            h3.office-strategy__title Стратегическое развитие за счет стремительного роста
+            .office-strategy__left
+                h3.left__title Наш девиз
+                h3.left__text--first Лучшие люди совершают 
+                h3.left__text.left__text--second невозможное 
+                h3.left__text.left__text--third каждый день!
+            .office-strategy__right
+                h3.right__title как мы достигаем это:
+                ul.right__list
+                    li.right__item Построение компании с профессионалами
+                    li.right__item Достижение качественного роста
+                    li.right__item Построение высокопроизводительных команд
+            .office-strategy__speed
+                h3.speed__title Достижение #[span рекордной] производительности:
+                ul.speed__list
+                    li.speed__item Построение самой быстрорастущей сети ресторанов
+                    li.speed__item Управление вкладами акционеров за счет увеличения прибыли от инвестиций
+                    li.speed__item Построение лояльности покупателей
+                    li.speed__item Обеспечение безупречной операционной деятельности
+                    li.speed__item Представление топ-бренда в сегменте Фаст фуд
+                    li.speed__item Двойной рост объема продаж в каждом ресторане
+            .office-strategy__interest
+                h3.interest__title Создание места, где людям #[span.interest__title--second <br> весело и интересно работать]
+                ul.interest__list
+                    li.interest__item Удовольствие от совместного пребывания в коллективе
+                    li.interest__item Совместное празднование достижений и успехов
+                    li.interest__item Место, где поощряется чувство юмора и продуктивность
+                    li.interest__item Восприятие непосредственной работы с клиентами как главный приоритет компании
+                    li.interest__item Укрепление товарищеских отношений в работе
+    .office-competence
+        .office-competence__container.container
+            .office-competence__text-block
+                h3.office-competence__title компетенции
+                ul.office-competence__list
+                    li.office-competence__item Ориентация на результат
+                    li.office-competence__item Управление изменениями
+                    li.office-competence__item Перспективное мышление
+                    li.office-competence__item Организационная интеграция
+                    li.office-competence__item Управление инновациями
+                    li.office-competence__item Управление людьми
+                a.office-competence__button.base-button Отправить резюме
+            .office-competence__image   
+                .office-competence__picture(style="background-image: url(static/img/competence.png);")
+    .office-vacancy 
+        .office-vacancy__contianer.container
+            .office-vacancy__block
+                .office-vacancy__text-block
+                    h3.office-vacancy__title Административный департамент
+                    .office-vacancy__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                a(href='office-vacancy.html').office-vacancy__button.base-button найти вакансию
+            .office-vacancy__block
+                .office-vacancy__text-block
+                    h3.office-vacancy__title Юридический отдел
+                    .office-vacancy__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                a(href='office-vacancy.html').office-vacancy__button.base-button найти вакансию
+            .office-vacancy__block
+                .office-vacancy__text-block
+                    h3.office-vacancy__title Отдел по управлению персоналом
+                    .office-vacancy__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                a(href='office-vacancy.html').office-vacancy__button.base-button найти вакансию
+            .office-vacancy__block
+                .office-vacancy__text-block
+                    h3.office-vacancy__title Финансовый департамент
+                    .office-vacancy__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                a(href='office-vacancy.html').office-vacancy__button.base-button найти вакансию
+            .office-vacancy__block
+                .office-vacancy__text-block
+                    h3.office-vacancy__title Отдел строительства и оборудования
+                    .office-vacancy__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                a(href='office-vacancy.html').office-vacancy__button.base-button найти вакансию
+            .office-vacancy__block
+                .office-vacancy__text-block
+                    h3.office-vacancy__title Отдел Информационных технологий
+                    .office-vacancy__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                a(href='office-vacancy.html').office-vacancy__button.base-button найти вакансию
+            .office-vacancy__block
+                .office-vacancy__text-block
+                    h3.office-vacancy__title Отдел маркетинга
+                    .office-vacancy__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                a(href='office-vacancy.html').office-vacancy__button.base-button найти вакансию
+            .office-vacancy__block
+                .office-vacancy__text-block
+                    h3.office-vacancy__title Отдел закупа и логистики
+                    .office-vacancy__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                a(href='office-vacancy.html').office-vacancy__button.base-button найти вакансию
+            .office-vacancy__block
+                .office-vacancy__text-block
+                    h3.office-vacancy__title Производственный департамент
+                    .office-vacancy__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                a(href='office-vacancy.html').office-vacancy__button.base-button найти вакансию
+    .office-actual
+        .office-actual__top
+            h2.office-actual__title Актуальные вакансии
+            .office-actual__text Tell me about your  project story and project brief
+            .office-actual__arrow
+        .office-actual__block
+            .office-actual__container.container
+                .office-actual__position Региональный директор
+                .office-actual__department Отдел информационных технологий
+                a.office-actual__button Отправить резюме
+        .office-actual__block
+            .office-actual__container.container
+                .office-actual__position Территориально управляющий
+                .office-actual__department Отдел информационных технологий
+                a.office-actual__button Отправить резюме
+        .office-actual__block
+            .office-actual__container.container
+                .office-actual__position директор ресторана
+                .office-actual__department Отдел информационных технологий
+                a.office-actual__button Отправить резюме
+        .office-actual__block
+            .office-actual__container.container
+                .office-actual__position Заместитель директора ресторана
+                .office-actual__department Отдел информационных технологий
+                a.office-actual__button Отправить резюме
+    .office-send
+        - 
+            var send = {
+                background: '#f07c00',
+            }
+        include ../modules/send/module
+
+
+
